@@ -261,7 +261,7 @@
     }
 
     async function loadData() {
-      const response = await fetch(`picks.json?v=${Date.now()}`, { cache: "no-store" });
+      const response = await fetch(`./picks.json?v=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) throw new Error(`Could not load picks.json: ${response.status}`);
       const data = await response.json();
       renderPicks(data);
