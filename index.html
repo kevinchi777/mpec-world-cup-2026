@@ -66,60 +66,74 @@
 
     .participant {
       border: 1px solid #000000;
-      margin-bottom: 24px;
-      padding: 16px;
+      margin-bottom: 8px;
       background: #ffffff;
     }
-
-    .participant h2 {
-      margin: 0 0 8px;
-      font-size: 20px;
-    }
-
-    .summary-line {
-      margin: 0 0 14px;
-      font-size: 14px;
-    }
-
-    .groups-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 14px;
-    }
-
-    .group-box {
-      border: 1px solid #999999;
-      padding: 10px;
-    }
-
-    .group-title {
-      margin: 0 0 8px;
+    
+    .participant summary {
+      cursor: pointer;
+      padding: 10px 12px;
       font-weight: 700;
       font-size: 15px;
+      list-style-position: inside;
     }
-
+    
+    .participant summary:hover {
+      background: #f2f2f2;
+    }
+    
+    .participant-body {
+      border-top: 1px solid #999999;
+      padding: 12px;
+    }
+    
+    .summary-line {
+      margin: 0 0 10px;
+      font-size: 12px;
+      color: #333333;
+    }
+    
+    .groups-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 8px;
+    }
+    
+    .group-box {
+      border: 1px solid #cccccc;
+      padding: 7px;
+    }
+    
+    .group-title {
+      margin: 0 0 5px;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    
     ol {
       margin: 0;
-      padding-left: 24px;
+      padding-left: 20px;
     }
-
+    
     li {
-      margin: 2px 0;
+      margin: 1px 0;
+      font-size: 12px;
     }
-
+    
     .third-place {
-      margin-top: 14px;
-      padding-top: 12px;
-      border-top: 1px solid #999999;
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid #cccccc;
+      font-size: 12px;
     }
-
+    
     .third-place span {
       display: inline-block;
       border: 1px solid #000000;
-      padding: 3px 8px;
-      margin: 2px 4px 2px 0;
+      padding: 2px 6px;
+      margin: 2px 3px 2px 0;
       font-weight: 700;
-      font-size: 13px;
+      font-size: 11px;
     }
 
     table {
@@ -181,6 +195,7 @@
 
     <section id="picks-tab">
       <p id="meta" class="meta">Loading picks...</p>
+      <p class="intro">Click a participant’s name to view their picks.</p>
       <div id="picks"></div>
     </section>
 
@@ -222,14 +237,14 @@
       const meta = document.getElementById("meta");
       const picksRoot = document.getElementById("picks");
       const picks = data.picks || [];
-
+    
       meta.textContent = `${picks.length} participant${picks.length === 1 ? "" : "s"} shown. Last updated: ${data.metadata?.lastUpdated || "unknown"}.`;
       picksRoot.innerHTML = "";
-
+    
       picks.forEach(person => {
-        const section = document.createElement("article");
+        const section = document.createElement("details");
         section.className = "participant";
-
+    
         const groupHtml = GROUPS.map(group => {
           const teams = person.groups?.[group] || [];
           return `
@@ -241,25 +256,26 @@
             </div>
           `;
         }).join("");
-
+    
         const thirdPlaceHtml = (person.thirdPlaceGroups || [])
           .map(group => `<span>${escapeHtml(group)}</span>`)
           .join("");
-
+    
         section.innerHTML = `
-          <h2>${escapeHtml(person.name)}</h2>
-          <p class="summary-line">Tiebreaker: ${escapeHtml(person.tiebreakerGoals ?? "—")} total group-stage goals</p>
-          <div class="groups-grid">${groupHtml}</div>
-          <div class="third-place">
-            <strong>Third-place qualifier groups:</strong>
-            <div>${thirdPlaceHtml}</div>
+          <summary>${escapeHtml(person.name)}</summary>
+          <div class="participant-body">
+            <p class="summary-line">Tiebreaker: ${escapeHtml(person.tiebreakerGoals ?? "—")} total group-stage goals</p>
+            <div class="groups-grid">${groupHtml}</div>
+            <div class="third-place">
+              <strong>Third-place qualifier groups:</strong>
+              <div>${thirdPlaceHtml}</div>
+            </div>
           </div>
         `;
-
+    
         picksRoot.appendChild(section);
       });
     }
-
     async function loadData() {
       const response = await fetch(`./picks.json?v=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) throw new Error(`Could not load picks.json: ${response.status}`);
