@@ -1,12 +1,13 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-09T19:10:33",
-    "challengeName": "MPEC World Cup 2026 Picks",
-    "notes": "Generated from the current Excel workbook. Public fields only."
+    "lastUpdated": "2026-06-09T22:00:12.471703+00:00",
+    "participantCount": 10,
+    "source": "Generated locally from Excel RawResponses",
+    "privacy": "Names exported as first name plus last initial."
   },
   "picks": [
     {
-      "name": "Elif Coskun",
+      "name": "Elif C.",
       "groups": {
         "A": [
           "Mexico",
@@ -94,7 +95,7 @@
       "tiebreakerGoals": 195
     },
     {
-      "name": "Elizabeth Neilan",
+      "name": "Elizabeth N.",
       "groups": {
         "A": [
           "Mexico",
@@ -182,7 +183,7 @@
       "tiebreakerGoals": 67
     },
     {
-      "name": "Kevin Chi",
+      "name": "Kevin C.",
       "groups": {
         "A": [
           "Mexico",
@@ -270,7 +271,7 @@
       "tiebreakerGoals": 199
     },
     {
-      "name": "Lizzie Qian",
+      "name": "Lizzie Q.",
       "groups": {
         "A": [
           "Mexico",
@@ -358,7 +359,7 @@
       "tiebreakerGoals": 152
     },
     {
-      "name": "Maddie Humphrey",
+      "name": "Maddie H.",
       "groups": {
         "A": [
           "Mexico",
@@ -446,7 +447,7 @@
       "tiebreakerGoals": 4
     },
     {
-      "name": "Mario Songane",
+      "name": "Mario S.",
       "groups": {
         "A": [
           "South Africa",
@@ -534,7 +535,7 @@
       "tiebreakerGoals": 54
     },
     {
-      "name": "Mark Siedner",
+      "name": "Mark S.",
       "groups": {
         "A": [
           "Mexico",
@@ -622,7 +623,7 @@
       "tiebreakerGoals": 226
     },
     {
-      "name": "Shreyas Mosurkal",
+      "name": "Shreyas M.",
       "groups": {
         "A": [
           "Mexico",
@@ -710,7 +711,95 @@
       "tiebreakerGoals": 130
     },
     {
-      "name": "X. Xu",
+      "name": "test",
+      "groups": {
+        "A": [
+          "South Africa",
+          "Mexico",
+          "South Korea",
+          "Czech Republic"
+        ],
+        "B": [
+          "Bosnia-Herzegovina",
+          "Canada",
+          "Qatar",
+          "Switzerland"
+        ],
+        "C": [
+          "Morocco",
+          "Brazil",
+          "Haiti",
+          "Scotland"
+        ],
+        "D": [
+          "Paraguay",
+          "United States",
+          "Australia",
+          "Türkiye"
+        ],
+        "E": [
+          "Germany",
+          "Curaçao",
+          "Ivory Coast",
+          "Ecuador"
+        ],
+        "F": [
+          "Netherlands",
+          "Sweden",
+          "Japan",
+          "Tunisia"
+        ],
+        "G": [
+          "Egypt",
+          "Belgium",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Cape Verde",
+          "Saudi Arabia",
+          "Spain",
+          "Uruguay"
+        ],
+        "I": [
+          "Senegal",
+          "France",
+          "Iraq",
+          "Norway"
+        ],
+        "J": [
+          "Algeria",
+          "Argentina",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Uzbekistan",
+          "Congo DR",
+          "Colombia"
+        ],
+        "L": [
+          "Croatia",
+          "England",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "D",
+        "F",
+        "G",
+        "H"
+      ],
+      "tiebreakerGoals": 5
+    },
+    {
+      "name": "X. X.",
       "groups": {
         "A": [
           "Mexico",
