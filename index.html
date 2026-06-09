@@ -100,14 +100,17 @@
     }
     
     .group-box {
-      border: 1px solid #cccccc;
-      padding: 7px;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      padding: 8px;
+      background: #ffffff;
     }
     
     .group-title {
-      margin: 0 0 5px;
+      margin: 0 0 6px;
       font-weight: 700;
       font-size: 12px;
+      color: #222222;
     }
     
     ol {
@@ -116,24 +119,62 @@
     }
     
     li {
-      margin: 1px 0;
+      margin: 2px 0;
       font-size: 12px;
+      line-height: 1.35;
+      padding: 2px 4px;
+    }
+
+    .flag {
+      display: inline-block;
+      min-width: 1.8em;
+      margin-right: 3px;
+      font-size: 13px;
+    }
+
+    .flag-text {
+      display: inline-block;
+      min-width: 2.4em;
+      margin-right: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #333333;
+    }
+
+    li.third-place-pick {
+      border: 1px solid #000000;
+      border-radius: 5px;
+      background: #f5f5f5;
+      padding: 4px 6px;
+      margin: 4px 0;
+    }
+
+    .third-place-note {
+      display: block;
+      margin-top: 2px;
+      font-size: 10px;
+      color: #555555;
+      font-style: italic;
     }
     
     .third-place {
       margin-top: 10px;
       padding-top: 8px;
-      border-top: 1px solid #cccccc;
+      border-top: 1px solid #dddddd;
       font-size: 12px;
+      color: #333333;
     }
     
     .third-place span {
       display: inline-block;
-      border: 1px solid #000000;
+      border: 1px solid #999999;
+      border-radius: 4px;
       padding: 2px 6px;
       margin: 2px 3px 2px 0;
       font-weight: 700;
       font-size: 11px;
+      background: #ffffff;
     }
 
     table {
@@ -224,6 +265,68 @@
   <script>
     const GROUPS = ["A","B","C","D","E","F","G","H","I","J","K","L"];
 
+    const FLAGS = {
+      "Mexico": "🇲🇽",
+      "South Africa": "🇿🇦",
+      "South Korea": "🇰🇷",
+      "Czech Republic": "🇨🇿",
+
+      "Canada": "🇨🇦",
+      "Bosnia-Herzegovina": "🇧🇦",
+      "Qatar": "🇶🇦",
+      "Switzerland": "🇨🇭",
+
+      "Brazil": "🇧🇷",
+      "Morocco": "🇲🇦",
+      "Haiti": "🇭🇹",
+      "Scotland": "SCO",
+
+      "United States": "🇺🇸",
+      "Paraguay": "🇵🇾",
+      "Australia": "🇦🇺",
+      "Türkiye": "🇹🇷",
+
+      "Germany": "🇩🇪",
+      "Curaçao": "🇨🇼",
+      "Ivory Coast": "🇨🇮",
+      "Ecuador": "🇪🇨",
+
+      "Netherlands": "🇳🇱",
+      "Japan": "🇯🇵",
+      "Sweden": "🇸🇪",
+      "Tunisia": "🇹🇳",
+
+      "Belgium": "🇧🇪",
+      "Egypt": "🇪🇬",
+      "Iran": "🇮🇷",
+      "New Zealand": "🇳🇿",
+
+      "Spain": "🇪🇸",
+      "Cape Verde": "🇨🇻",
+      "Saudi Arabia": "🇸🇦",
+      "Uruguay": "🇺🇾",
+
+      "France": "🇫🇷",
+      "Senegal": "🇸🇳",
+      "Iraq": "🇮🇶",
+      "Norway": "🇳🇴",
+
+      "Argentina": "🇦🇷",
+      "Algeria": "🇩🇿",
+      "Austria": "🇦🇹",
+      "Jordan": "🇯🇴",
+
+      "Portugal": "🇵🇹",
+      "Congo DR": "🇨🇩",
+      "Uzbekistan": "🇺🇿",
+      "Colombia": "🇨🇴",
+
+      "England": "ENG",
+      "Croatia": "🇭🇷",
+      "Ghana": "🇬🇭",
+      "Panama": "🇵🇦"
+    };
+
     function escapeHtml(value) {
       return String(value ?? "")
         .replaceAll("&", "&amp;")
@@ -231,6 +334,13 @@
         .replaceAll(">", "&gt;")
         .replaceAll('"', "&quot;")
         .replaceAll("'", "&#039;");
+    }
+
+    function teamWithFlag(team) {
+      const marker = FLAGS[team] || "";
+      const markerClass = marker.length > 2 ? "flag" : "flag-text";
+      const markerHtml = marker ? `<span class="${markerClass}">${escapeHtml(marker)}</span>` : "";
+      return `${markerHtml}${escapeHtml(team)}`;
     }
 
     function formatDisplayName(fullName) {
@@ -264,7 +374,15 @@
             <div class="group-box">
               <div class="group-title">Group ${group}</div>
               <ol>
-                ${teams.map(team => `<li>${escapeHtml(team)}</li>`).join("")}
+                ${teams.map((team, index) => {
+                  const isThirdPlaceQualifierPick = index === 2 && (person.thirdPlaceGroups || []).includes(group);
+                  return `
+                    <li class="${isThirdPlaceQualifierPick ? "third-place-pick" : ""}">
+                      ${teamWithFlag(team)}
+                      ${isThirdPlaceQualifierPick ? `<span class="third-place-note">3rd-place qualifier pick</span>` : ""}
+                    </li>
+                  `;
+                }).join("")}
               </ol>
             </div>
           `;
