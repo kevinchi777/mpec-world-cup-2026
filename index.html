@@ -233,6 +233,19 @@
         .replaceAll("'", "&#039;");
     }
 
+    function formatDisplayName(fullName) {
+      const parts = String(fullName || "").trim().split(/\s+/);
+    
+      if (parts.length === 0) return "";
+      if (parts.length === 1) return parts[0];
+    
+      const firstName = parts[0];
+      const lastName = parts[parts.length - 1];
+      const lastInitial = lastName.charAt(0).toUpperCase();
+    
+      return `${firstName} ${lastInitial}.`;
+    }
+    
     function renderPicks(data) {
       const meta = document.getElementById("meta");
       const picksRoot = document.getElementById("picks");
@@ -262,7 +275,7 @@
           .join("");
     
         section.innerHTML = `
-          <summary>${escapeHtml(person.name)}</summary>
+          <summary>${escapeHtml(formatDisplayName(person.name))}</summary>
           <div class="participant-body">
             <p class="summary-line">Tiebreaker: ${escapeHtml(person.tiebreakerGoals ?? "—")} total group-stage goals</p>
             <div class="groups-grid">${groupHtml}</div>
