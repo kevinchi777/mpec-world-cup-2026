@@ -1,0 +1,801 @@
+{
+  "metadata": {
+    "lastUpdated": "2026-06-09T19:10:33",
+    "challengeName": "MPEC World Cup 2026 Picks",
+    "notes": "Generated from the current Excel workbook. Public fields only."
+  },
+  "picks": [
+    {
+      "name": "Elif Coskun",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "South Africa",
+          "Czech Republic"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Türkiye",
+          "United States",
+          "Paraguay",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "E",
+        "F",
+        "G",
+        "D",
+        "I",
+        "L",
+        "K",
+        "J"
+      ],
+      "tiebreakerGoals": 195
+    },
+    {
+      "name": "Elizabeth Neilan",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "United States",
+          "Türkiye",
+          "Paraguay",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "K",
+        "H",
+        "F",
+        "I",
+        "C",
+        "D",
+        "A",
+        "G"
+      ],
+      "tiebreakerGoals": 67
+    },
+    {
+      "name": "Kevin Chi",
+      "groups": {
+        "A": [
+          "Mexico",
+          "Czech Republic",
+          "South Korea",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Morocco",
+          "Brazil",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Türkiye",
+          "United States",
+          "Australia",
+          "Paraguay"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Japan",
+          "Netherlands",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Congo DR",
+          "Colombia",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "D",
+        "E",
+        "I",
+        "K",
+        "L",
+        "C",
+        "F"
+      ],
+      "tiebreakerGoals": 199
+    },
+    {
+      "name": "Lizzie Qian",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Scotland",
+          "Morocco",
+          "Haiti"
+        ],
+        "D": [
+          "Paraguay",
+          "Türkiye",
+          "United States",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Curaçao",
+          "Ecuador"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Iran",
+          "Egypt",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Iraq",
+          "Senegal"
+        ],
+        "J": [
+          "Argentina",
+          "Jordan",
+          "Algeria",
+          "Austria"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "B",
+        "D",
+        "F",
+        "J",
+        "I",
+        "L",
+        "C"
+      ],
+      "tiebreakerGoals": 152
+    },
+    {
+      "name": "Maddie Humphrey",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Africa",
+          "Czech Republic",
+          "South Korea"
+        ],
+        "B": [
+          "Switzerland",
+          "Bosnia-Herzegovina",
+          "Qatar",
+          "Canada"
+        ],
+        "C": [
+          "Brazil",
+          "Scotland",
+          "Haiti",
+          "Morocco"
+        ],
+        "D": [
+          "United States",
+          "Paraguay",
+          "Australia",
+          "Türkiye"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Colombia",
+          "Portugal",
+          "Uzbekistan",
+          "Congo DR"
+        ],
+        "L": [
+          "England",
+          "Ghana",
+          "Croatia",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "E",
+        "H",
+        "K",
+        "J",
+        "C",
+        "F",
+        "D"
+      ],
+      "tiebreakerGoals": 4
+    },
+    {
+      "name": "Mario Songane",
+      "groups": {
+        "A": [
+          "South Africa",
+          "Mexico",
+          "Czech Republic",
+          "South Korea"
+        ],
+        "B": [
+          "Switzerland",
+          "Bosnia-Herzegovina",
+          "Canada",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Paraguay",
+          "Türkiye",
+          "United States",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Sweden",
+          "Tunisia",
+          "Japan"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "New Zealand",
+          "Iran"
+        ],
+        "H": [
+          "Spain",
+          "Cape Verde",
+          "Uruguay",
+          "Saudi Arabia"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "Croatia",
+          "Ghana",
+          "England",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "B",
+        "D",
+        "A",
+        "F",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "tiebreakerGoals": 54
+    },
+    {
+      "name": "Mark Siedner",
+      "groups": {
+        "A": [
+          "Mexico",
+          "Czech Republic",
+          "South Korea",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Morocco",
+          "Brazil",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Türkiye",
+          "United States",
+          "Paraguay",
+          "Australia"
+        ],
+        "E": [
+          "Ecuador",
+          "Germany",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Sweden",
+          "Japan",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "Croatia",
+          "England",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "L",
+        "J",
+        "I",
+        "F",
+        "A",
+        "C",
+        "D",
+        "E"
+      ],
+      "tiebreakerGoals": 226
+    },
+    {
+      "name": "Shreyas Mosurkal",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Paraguay",
+          "United States",
+          "Türkiye",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Tunisia",
+          "Sweden"
+        ],
+        "G": [
+          "Egypt",
+          "Belgium",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Colombia",
+          "Portugal",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "Ghana",
+          "England",
+          "Croatia",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "C",
+        "F",
+        "I",
+        "L",
+        "D",
+        "G",
+        "J"
+      ],
+      "tiebreakerGoals": 130
+    },
+    {
+      "name": "X. Xu",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "South Africa",
+          "Czech Republic"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Paraguay",
+          "United States",
+          "Türkiye",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "H",
+        "L"
+      ],
+      "tiebreakerGoals": 188
+    }
+  ]
+}
