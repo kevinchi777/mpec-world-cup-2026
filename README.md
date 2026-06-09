@@ -36,38 +36,7 @@ and writes/overwrites:
 picks.json
 ```
 
-## Preview locally
 
-Double-click:
-
-```text
-preview_local_server.bat
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-## Share live
-
-Host the folder as a static website. The page is just HTML + JSON.
-
-Recommended options:
-
-1. GitHub Pages
-   - Put `index.html` and `picks.json` in a GitHub repository.
-   - Enable GitHub Pages.
-   - Each time you update `picks.json`, commit and push.
-
-2. Netlify Drop
-   - Drag this folder into Netlify Drop.
-   - For updates, re-drag the folder after running `update_picks_json.bat`.
-
-3. SharePoint/internal site
-   - Best if you want MPEC-only access.
-   - Upload/host the files in a location that serves `index.html` as a webpage.
 
 ## Privacy
 
@@ -78,4 +47,4 @@ The exporter includes only:
 - third-place qualifier groups
 - tiebreaker goals
 
-It intentionally excludes response IDs, emails, timestamps, and raw Microsoft Forms metadata.
+It intentionally excludes response IDs, timestamps, and raw Microsoft Forms metadata.
