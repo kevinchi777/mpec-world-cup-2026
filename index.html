@@ -125,23 +125,21 @@
       padding: 2px 4px;
     }
 
-    .flag-img {
-      width: 18px;
-      height: 13px;
-      margin-right: 5px;
-      vertical-align: -2px;
-      border: 1px solid #dddddd;
+    .flag {
+      display: inline-block;
+      min-width: 1.8em;
+      margin-right: 3px;
+      font-size: 13px;
     }
 
     .flag-text {
       display: inline-block;
       min-width: 2.4em;
-      margin-right: 5px;
+      margin-right: 4px;
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 0.02em;
       color: #333333;
-      vertical-align: 1px;
     }
 
     li.third-place-pick {
@@ -268,65 +266,65 @@
     const GROUPS = ["A","B","C","D","E","F","G","H","I","J","K","L"];
 
     const FLAGS = {
-      "Mexico": { code: "mx", label: "Mexico" },
-      "South Africa": { code: "za", label: "South Africa" },
-      "South Korea": { code: "kr", label: "South Korea" },
-      "Czech Republic": { code: "cz", label: "Czech Republic" },
+      "Mexico": "🇲🇽",
+      "South Africa": "🇿🇦",
+      "South Korea": "🇰🇷",
+      "Czech Republic": "🇨🇿",
 
-      "Canada": { code: "ca", label: "Canada" },
-      "Bosnia-Herzegovina": { code: "ba", label: "Bosnia-Herzegovina" },
-      "Qatar": { code: "qa", label: "Qatar" },
-      "Switzerland": { code: "ch", label: "Switzerland" },
+      "Canada": "🇨🇦",
+      "Bosnia-Herzegovina": "🇧🇦",
+      "Qatar": "🇶🇦",
+      "Switzerland": "🇨🇭",
 
-      "Brazil": { code: "br", label: "Brazil" },
-      "Morocco": { code: "ma", label: "Morocco" },
-      "Haiti": { code: "ht", label: "Haiti" },
-      "Scotland": { text: "SCO", label: "Scotland" },
+      "Brazil": "🇧🇷",
+      "Morocco": "🇲🇦",
+      "Haiti": "🇭🇹",
+      "Scotland": "SCO",
 
-      "United States": { code: "us", label: "United States" },
-      "Paraguay": { code: "py", label: "Paraguay" },
-      "Australia": { code: "au", label: "Australia" },
-      "Türkiye": { code: "tr", label: "Türkiye" },
+      "United States": "🇺🇸",
+      "Paraguay": "🇵🇾",
+      "Australia": "🇦🇺",
+      "Türkiye": "🇹🇷",
 
-      "Germany": { code: "de", label: "Germany" },
-      "Curaçao": { code: "cw", label: "Curaçao" },
-      "Ivory Coast": { code: "ci", label: "Ivory Coast" },
-      "Ecuador": { code: "ec", label: "Ecuador" },
+      "Germany": "🇩🇪",
+      "Curaçao": "🇨🇼",
+      "Ivory Coast": "🇨🇮",
+      "Ecuador": "🇪🇨",
 
-      "Netherlands": { code: "nl", label: "Netherlands" },
-      "Japan": { code: "jp", label: "Japan" },
-      "Sweden": { code: "se", label: "Sweden" },
-      "Tunisia": { code: "tn", label: "Tunisia" },
+      "Netherlands": "🇳🇱",
+      "Japan": "🇯🇵",
+      "Sweden": "🇸🇪",
+      "Tunisia": "🇹🇳",
 
-      "Belgium": { code: "be", label: "Belgium" },
-      "Egypt": { code: "eg", label: "Egypt" },
-      "Iran": { code: "ir", label: "Iran" },
-      "New Zealand": { code: "nz", label: "New Zealand" },
+      "Belgium": "🇧🇪",
+      "Egypt": "🇪🇬",
+      "Iran": "🇮🇷",
+      "New Zealand": "🇳🇿",
 
-      "Spain": { code: "es", label: "Spain" },
-      "Cape Verde": { code: "cv", label: "Cape Verde" },
-      "Saudi Arabia": { code: "sa", label: "Saudi Arabia" },
-      "Uruguay": { code: "uy", label: "Uruguay" },
+      "Spain": "🇪🇸",
+      "Cape Verde": "🇨🇻",
+      "Saudi Arabia": "🇸🇦",
+      "Uruguay": "🇺🇾",
 
-      "France": { code: "fr", label: "France" },
-      "Senegal": { code: "sn", label: "Senegal" },
-      "Iraq": { code: "iq", label: "Iraq" },
-      "Norway": { code: "no", label: "Norway" },
+      "France": "🇫🇷",
+      "Senegal": "🇸🇳",
+      "Iraq": "🇮🇶",
+      "Norway": "🇳🇴",
 
-      "Argentina": { code: "ar", label: "Argentina" },
-      "Algeria": { code: "dz", label: "Algeria" },
-      "Austria": { code: "at", label: "Austria" },
-      "Jordan": { code: "jo", label: "Jordan" },
+      "Argentina": "🇦🇷",
+      "Algeria": "🇩🇿",
+      "Austria": "🇦🇹",
+      "Jordan": "🇯🇴",
 
-      "Portugal": { code: "pt", label: "Portugal" },
-      "Congo DR": { code: "cd", label: "Congo DR" },
-      "Uzbekistan": { code: "uz", label: "Uzbekistan" },
-      "Colombia": { code: "co", label: "Colombia" },
+      "Portugal": "🇵🇹",
+      "Congo DR": "🇨🇩",
+      "Uzbekistan": "🇺🇿",
+      "Colombia": "🇨🇴",
 
-      "England": { text: "ENG", label: "England" },
-      "Croatia": { code: "hr", label: "Croatia" },
-      "Ghana": { code: "gh", label: "Ghana" },
-      "Panama": { code: "pa", label: "Panama" }
+      "England": "ENG",
+      "Croatia": "🇭🇷",
+      "Ghana": "🇬🇭",
+      "Panama": "🇵🇦"
     };
 
     function escapeHtml(value) {
@@ -339,17 +337,10 @@
     }
 
     function teamWithFlag(team) {
-      const flag = FLAGS[team];
-
-      if (!flag) {
-        return escapeHtml(team);
-      }
-
-      if (flag.code) {
-        return `<img class="flag-img" src="https://flagcdn.com/24x18/${flag.code}.png" alt="${escapeHtml(flag.label)} flag" loading="lazy"> ${escapeHtml(team)}`;
-      }
-
-      return `<span class="flag-text">${escapeHtml(flag.text)}</span> ${escapeHtml(team)}`;
+      const marker = FLAGS[team] || "";
+      const markerClass = marker.length > 2 ? "flag" : "flag-text";
+      const markerHtml = marker ? `<span class="${markerClass}">${escapeHtml(marker)}</span>` : "";
+      return `${markerHtml}${escapeHtml(team)}`;
     }
 
     function formatDisplayName(fullName) {
