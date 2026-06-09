@@ -280,7 +280,10 @@
     });
 
     loadData().catch(error => {
-      document.getElementById("meta").textContent = "Could not load picks.json. Make sure picks.json is in the same folder as index.html.";
+      const meta = document.getElementById("meta");
+      if (meta) {
+        meta.textContent = "Could not load picks.json. Make sure picks.json is in the same folder as index.html.";
+      }
       console.error(error);
     });
   </script>
