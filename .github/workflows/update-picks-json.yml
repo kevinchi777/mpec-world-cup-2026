@@ -1,0 +1,48 @@
+name: Update picks.json from Power Automate
+
+on:
+  repository_dispatch:
+    types:
+      - update-picks-json
+
+permissions:
+  contents: write
+
+jobs:
+  update-picks-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Write picks.json
+        env:
+          PICKS_JSON: ${{ toJson(github.event.client_payload) }}
+        run: |
+          python - <<'PY'
+          import os
+          import json
+
+          text = os.environ["PICKS_JSON"]
+          data = json.loads(text)
+
+          with open("picks.json", "w", encoding="utf-8") as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+
+          print(f"Wrote picks.json with {len(data.get('picks', []))} participant(s).")
+          PY
+
+      - name: Commit and push updated picks.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add picks.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update picks.json from Power Automate"
+            git push
+          fi
