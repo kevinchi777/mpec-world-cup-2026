@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-10T18:24:26.709262+00:00",
-    "participantCount": 11,
+    "lastUpdated": "2026-06-10T19:39:51.403329+00:00",
+    "participantCount": 13,
     "source": "Generated locally from Excel RawResponses",
     "privacy": "Names exported as first name plus last initial."
   },
@@ -183,6 +183,94 @@
       "tiebreakerGoals": 67
     },
     {
+      "name": "Grady F.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "South Africa",
+          "Czech Republic"
+        ],
+        "B": [
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Switzerland",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Scotland",
+          "Morocco",
+          "Haiti"
+        ],
+        "D": [
+          "Paraguay",
+          "Türkiye",
+          "United States",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Japan",
+          "Sweden",
+          "Netherlands",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Colombia",
+          "Portugal",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Ghana",
+          "Croatia",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "G",
+        "D",
+        "E",
+        "I",
+        "J",
+        "L",
+        "C"
+      ],
+      "tiebreakerGoals": 216
+    },
+    {
       "name": "Kevin C.",
       "groups": {
         "A": [
@@ -357,6 +445,94 @@
         "F"
       ],
       "tiebreakerGoals": 178
+    },
+    {
+      "name": "Liana R.",
+      "groups": {
+        "A": [
+          "South Korea",
+          "Mexico",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Türkiye",
+          "United States",
+          "Australia",
+          "Paraguay"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Japan",
+          "Netherlands",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Jordan",
+          "Algeria"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "F",
+        "A",
+        "C",
+        "D",
+        "G",
+        "I",
+        "K",
+        "H"
+      ],
+      "tiebreakerGoals": 180
     },
     {
       "name": "Lizzie Q.",
