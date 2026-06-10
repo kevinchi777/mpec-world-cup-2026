@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-09T22:36:24.354252+00:00",
-    "participantCount": 9,
+    "lastUpdated": "2026-06-10T15:17:49.677267+00:00",
+    "participantCount": 10,
     "source": "Generated locally from Excel RawResponses",
     "privacy": "Names exported as first name plus last initial."
   },
@@ -709,6 +709,94 @@
         "J"
       ],
       "tiebreakerGoals": 130
+    },
+    {
+      "name": "Suzanne M.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "United States",
+          "Paraguay",
+          "Türkiye",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Iran",
+          "Egypt",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "I",
+        "J",
+        "G"
+      ],
+      "tiebreakerGoals": 172
     },
     {
       "name": "X. X.",
