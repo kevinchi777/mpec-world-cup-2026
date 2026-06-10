@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-10T15:17:49.677267+00:00",
-    "participantCount": 10,
+    "lastUpdated": "2026-06-10T18:24:26.709262+00:00",
+    "participantCount": 11,
     "source": "Generated locally from Excel RawResponses",
     "privacy": "Names exported as first name plus last initial."
   },
@@ -269,6 +269,94 @@
         "F"
       ],
       "tiebreakerGoals": 199
+    },
+    {
+      "name": "Kihumuro R.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Türkiye",
+          "United States",
+          "Australia",
+          "Paraguay"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "L",
+        "K",
+        "J",
+        "I",
+        "G",
+        "E",
+        "C",
+        "F"
+      ],
+      "tiebreakerGoals": 178
     },
     {
       "name": "Lizzie Q.",
