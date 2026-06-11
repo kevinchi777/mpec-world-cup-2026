@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-11T16:48:53.983138+00:00",
-    "participantCount": 24,
+    "lastUpdated": "2026-06-11T16:58:07.249181+00:00",
+    "participantCount": 25,
     "source": "Generated locally from Excel RawResponses",
     "privacy": "Includes fullName in public picks.json so the Knockout Picks tab can load personalized brackets by full-name lookup.",
     "knockoutLookup": {
@@ -2169,6 +2169,96 @@
         "L"
       ],
       "tiebreakerGoals": 188
+    },
+    {
+      "fullName": "Zoë Elizée",
+      "name": "Zoë E.",
+      "displayName": "Zoë E.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "South Africa",
+          "Czech Republic"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Haiti",
+          "Scotland"
+        ],
+        "D": [
+          "United States",
+          "Türkiye",
+          "Paraguay",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Japan",
+          "Netherlands",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "B",
+        "C",
+        "F",
+        "G",
+        "H",
+        "K",
+        "L"
+      ],
+      "tiebreakerGoals": 192
     }
   ]
 }
