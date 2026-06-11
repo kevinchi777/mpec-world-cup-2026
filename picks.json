@@ -1,13 +1,21 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-11T14:47:58.525472+00:00",
+    "lastUpdated": "2026-06-11T15:09:43.726462+00:00",
     "participantCount": 18,
     "source": "Generated locally from Excel RawResponses",
-    "privacy": "Names exported as first name plus last initial."
+    "privacy": "Names exported as first name plus last initial. Full names and knockout codes are kept in a private local CSV.",
+    "knockoutLookup": {
+      "enabled": true,
+      "hashVersion": "sha256-v1",
+      "hashSalt": "mpec-world-cup-2026-knockout-v1",
+      "hashInput": "hashVersion|NORMALIZED_FULL_NAME|NORMALIZED_KNOCKOUT_CODE|hashSalt"
+    }
   },
   "picks": [
     {
       "name": "Chase M.",
+      "participantId": "p_6UYTURL3",
+      "lookupHash": "d9bcc4d131c5bfaf428a007f5af375f73866a28af76f465cb95d37e4ba26692d",
       "groups": {
         "A": [
           "Mexico",
@@ -96,6 +104,8 @@
     },
     {
       "name": "Elif C.",
+      "participantId": "p_RPBLMXPH",
+      "lookupHash": "009f2b6399ffb16f6e2acb9f61af19e39ca81f171aeb0c4ad32959f310cdb48e",
       "groups": {
         "A": [
           "Mexico",
@@ -184,6 +194,8 @@
     },
     {
       "name": "Elizabeth N.",
+      "participantId": "p_A4SP2JUU",
+      "lookupHash": "3d6194f9c14698864ef94ffcba111129f08301fbc0d3d4afbbe3b168b921f36e",
       "groups": {
         "A": [
           "Mexico",
@@ -272,6 +284,8 @@
     },
     {
       "name": "Ellie B.",
+      "participantId": "p_C6CXSCJL",
+      "lookupHash": "d03370edf09575a3ada05e3ce6feba49381b78127ab9fe0b450fef9260b59e6f",
       "groups": {
         "A": [
           "Mexico",
@@ -360,6 +374,8 @@
     },
     {
       "name": "Emily H.",
+      "participantId": "p_Y8BHGATV",
+      "lookupHash": "133337a585b8263f49a16f856008189804491f8e5e3dabb40446a2e5c55e70e2",
       "groups": {
         "A": [
           "Mexico",
@@ -448,6 +464,8 @@
     },
     {
       "name": "Grady F.",
+      "participantId": "p_W744U8Y3",
+      "lookupHash": "85f81c735cf5b110a85f85d7d04a83175f8e58be5f85c8bbf8e7be2d92db6c2c",
       "groups": {
         "A": [
           "Mexico",
@@ -536,6 +554,8 @@
     },
     {
       "name": "Karen R.",
+      "participantId": "p_G2Z6EUDD",
+      "lookupHash": "da772ad3a2e06fffa6ee78b08374af46486dabba18a27e260d6d7293730a9bd8",
       "groups": {
         "A": [
           "South Africa",
@@ -624,6 +644,8 @@
     },
     {
       "name": "Kevin C.",
+      "participantId": "p_XU2543YE",
+      "lookupHash": "63b0f750a212521245f779021dbbd94d3060cc4eec2410be4e8502ea30c1e7e0",
       "groups": {
         "A": [
           "Mexico",
@@ -712,6 +734,8 @@
     },
     {
       "name": "Kihumuro R.",
+      "participantId": "p_V36QMFQ7",
+      "lookupHash": "7642fbcaf3a80298b49eb6b973527d62860566a08c9d08233bdcd285e83198d1",
       "groups": {
         "A": [
           "Mexico",
@@ -800,6 +824,8 @@
     },
     {
       "name": "Krishna R.",
+      "participantId": "p_PGW5C85C",
+      "lookupHash": "28c521db9b98e6b420bfa7dfe65c08d596eb4a036f69443e706f1bc563afe24b",
       "groups": {
         "A": [
           "Mexico",
@@ -888,6 +914,8 @@
     },
     {
       "name": "Liana R.",
+      "participantId": "p_AATBFCMG",
+      "lookupHash": "ef5b6c97c50896c5076434bb3fa6c8ac93c2a4771fdc8ed1aeb760fcec110fb3",
       "groups": {
         "A": [
           "South Korea",
@@ -976,6 +1004,8 @@
     },
     {
       "name": "Lizzie Q.",
+      "participantId": "p_BXNK2PDP",
+      "lookupHash": "c346d68aaf098068ca678a703b44809812aae0ff2634925e8d415e9b17a9b144",
       "groups": {
         "A": [
           "Mexico",
@@ -1064,6 +1094,8 @@
     },
     {
       "name": "Maddie H.",
+      "participantId": "p_YNWS4X26",
+      "lookupHash": "58e93ab10b6b6d506936633df3bd2e964f11b5b6f9bf1b74b832a54786b00d74",
       "groups": {
         "A": [
           "Mexico",
@@ -1152,6 +1184,8 @@
     },
     {
       "name": "Mario S.",
+      "participantId": "p_AS9622AP",
+      "lookupHash": "94f86501c67c5eeac2b740e9067b8b9f5f6ee833ea25412f06a840c37ecad918",
       "groups": {
         "A": [
           "South Africa",
@@ -1240,6 +1274,8 @@
     },
     {
       "name": "Mark S.",
+      "participantId": "p_Z6ZQ8EC5",
+      "lookupHash": "f4babb82186d9216c6555f8dd0a0c7a3d34568633ad8abd12086b48347350de1",
       "groups": {
         "A": [
           "Mexico",
@@ -1328,6 +1364,8 @@
     },
     {
       "name": "Shreyas M.",
+      "participantId": "p_CS5YNWVR",
+      "lookupHash": "2e748aa1d2f6aaaaf42f5a6d37c22772d6ea11916dbd89d4c9c67c5d34f2f3d7",
       "groups": {
         "A": [
           "Mexico",
@@ -1416,6 +1454,8 @@
     },
     {
       "name": "Suzanne M.",
+      "participantId": "p_8GWXPRG2",
+      "lookupHash": "988376f33c3fdd6270fc1b7eb921c348b5f5a05c453bde4b3e5bf5257a22cd9d",
       "groups": {
         "A": [
           "Mexico",
@@ -1504,6 +1544,8 @@
     },
     {
       "name": "X. X.",
+      "participantId": "p_TU4VYVZ6",
+      "lookupHash": "9d4dc4c73a50e876eed46492416c9368e7a54bde7cf40cd016b06699f19bbff7",
       "groups": {
         "A": [
           "Mexico",
