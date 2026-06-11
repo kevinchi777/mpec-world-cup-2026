@@ -28,59 +28,58 @@
       overflow-x: hidden;
     }
 
-    main {
-      max-width: 1120px;
+    .page-shell {
+      max-width: 1420px;
       margin: 0 auto;
+    }
+
+    .content-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .main-panel {
+      min-width: 0;
       position: relative;
       z-index: 2;
-      background: rgba(255, 255, 255, 0.95);
     }
 
-    .flag-rail {
-      position: fixed;
+    .flag-marquee {
+      position: sticky;
       top: 0;
-      bottom: 0;
-      width: 54px;
+      z-index: 5;
+      height: 42px;
       overflow: hidden;
-      pointer-events: none;
-      z-index: 1;
-      opacity: 0.56;
+      margin: -32px -32px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.98);
     }
 
-    .flag-rail.left {
-      left: 18px;
-    }
-
-    .flag-rail.right {
-      right: 18px;
-    }
-
-    .flag-track {
+    .flag-track-horizontal {
       display: flex;
-      flex-direction: column;
       align-items: center;
-      gap: 11px;
-      animation: scroll-up 88s linear infinite;
+      gap: 14px;
+      width: max-content;
+      padding: 9px 0;
+      animation: scroll-left 125s linear infinite;
       will-change: transform;
-    }
-
-    .flag-rail.right .flag-track {
-      animation-duration: 98s;
-      animation-delay: -24s;
+      opacity: 0.42;
+      filter: saturate(0.58);
     }
 
     .rail-flag {
-      width: 26px;
-      height: 26px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       display: block;
-      filter: saturate(0.95);
-      box-shadow: 0 1px 3px rgba(16, 21, 16, 0.10);
+      flex: 0 0 auto;
     }
 
     .rail-fallback {
-      width: 26px;
-      height: 26px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       display: none;
       align-items: center;
@@ -88,33 +87,22 @@
       background: #ffffff;
       border: 1px solid var(--line);
       color: var(--muted);
-      font-size: 9px;
+      font-size: 8px;
       font-weight: 700;
+      flex: 0 0 auto;
     }
 
-    @keyframes scroll-up {
+    @keyframes scroll-left {
       from {
-        transform: translateY(0);
+        transform: translateX(0);
       }
       to {
-        transform: translateY(-50%);
-      }
-    }
-
-    @media (max-width: 1250px) {
-      .flag-rail {
-        opacity: 0.34;
-      }
-    }
-
-    @media (max-width: 980px) {
-      .flag-rail {
-        display: none;
+        transform: translateX(-50%);
       }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .flag-track {
+      .flag-track-horizontal {
         animation: none;
       }
     }
@@ -244,7 +232,7 @@
 
     .groups-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 8px;
     }
 
@@ -355,6 +343,147 @@
       font-size: 11px;
     }
 
+    .trends-panel {
+      position: sticky;
+      top: 64px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 13px;
+      background: #ffffff;
+      box-shadow: 0 3px 14px rgba(16, 21, 16, 0.05);
+    }
+
+    .trends-panel h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    .trend-section {
+      padding-top: 12px;
+      margin-top: 12px;
+      border-top: 1px solid var(--line);
+    }
+
+    .trend-section:first-of-type {
+      padding-top: 0;
+      margin-top: 0;
+      border-top: none;
+    }
+
+    .trend-section h3 {
+      margin: 0 0 8px;
+      font-size: 13px;
+      color: var(--green);
+    }
+
+    .trend-row {
+      display: grid;
+      grid-template-columns: 56px minmax(0, 1fr) 42px;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+
+    .trend-group {
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .trend-team {
+      min-width: 0;
+    }
+
+    .trend-pct {
+      color: var(--muted);
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mini-bar {
+      grid-column: 2 / 4;
+      height: 5px;
+      border-radius: 999px;
+      background: #eef2ef;
+      overflow: hidden;
+      margin-top: -4px;
+      margin-bottom: 2px;
+    }
+
+    .mini-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: var(--green);
+    }
+
+    .tiebreaker-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .stat-box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 7px 6px;
+      background: var(--soft);
+    }
+
+    .stat-label {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .stat-value {
+      display: block;
+      margin-top: 2px;
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .histogram {
+      display: flex;
+      align-items: end;
+      gap: 5px;
+      height: 86px;
+      padding: 8px 4px 2px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    .hist-bin {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      gap: 4px;
+    }
+
+    .hist-bar {
+      width: 100%;
+      max-width: 22px;
+      min-height: 2px;
+      border-radius: 4px 4px 0 0;
+      background: var(--green);
+    }
+
+    .hist-label {
+      font-size: 9px;
+      color: var(--muted);
+      transform: rotate(-35deg);
+      transform-origin: center;
+      white-space: nowrap;
+    }
+
     table {
       border-collapse: collapse;
       width: 100%;
@@ -394,9 +523,24 @@
       background: var(--soft);
     }
 
+    @media (max-width: 1120px) {
+      .content-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .trends-panel {
+        position: static;
+        order: -1;
+      }
+    }
+
     @media (max-width: 700px) {
       body {
-        padding: 18px;
+        padding: 0 18px 18px;
+      }
+
+      .flag-marquee {
+        margin: 0 -18px 18px;
       }
 
       .site-header::after {
@@ -412,55 +556,78 @@
       .groups-grid {
         grid-template-columns: 1fr;
       }
+
+      .trend-row {
+        grid-template-columns: 48px minmax(0, 1fr) 38px;
+      }
     }
   </style>
 </head>
 <body>
-  <aside class="flag-rail left" aria-hidden="true">
-    <div class="flag-track" id="flag-track-left"></div>
-  </aside>
+  <div class="flag-marquee" aria-hidden="true">
+    <div class="flag-track-horizontal" id="flag-track-horizontal"></div>
+  </div>
 
-  <aside class="flag-rail right" aria-hidden="true">
-    <div class="flag-track" id="flag-track-right"></div>
-  </aside>
-
-  <main>
+  <div class="page-shell">
     <header class="site-header">
       <h1>MPEC World Cup 2026 Bracket Challenge</h1>
       <p id="meta" class="meta">Loading picks...</p>
     </header>
 
-    <div class="tabs" aria-label="Page tabs">
-      <button class="tab active" data-tab="picks">All Picks</button>
-      <button class="tab" data-tab="leaderboard">Leaderboard</button>
-      <button class="tab" data-tab="rules">Rules</button>
+    <div class="content-layout">
+      <main class="main-panel">
+        <div class="tabs" aria-label="Page tabs">
+          <button class="tab active" data-tab="picks">All Picks</button>
+          <button class="tab" data-tab="leaderboard">Leaderboard</button>
+          <button class="tab" data-tab="rules">Rules</button>
+        </div>
+
+        <section id="picks-tab">
+          <div id="picks"></div>
+        </section>
+
+        <section id="leaderboard-tab" class="hidden">
+          <div class="notice">
+            <strong>Leaderboard will be available after all teams have played a game.</strong>
+          </div>
+        </section>
+
+        <section id="rules-tab" class="hidden">
+          <div class="rules">
+            <h2>Scoring rules</h2>
+            <ul>
+              <li>Correct 1st-place team in a group: <strong>4 points</strong></li>
+              <li>Correct 2nd-place team in a group: <strong>3 points</strong></li>
+              <li>Correct 3rd-place team in a group: <strong>2 points</strong></li>
+              <li>Correct 4th-place team in a group: <strong>1 point</strong></li>
+              <li>Each group is worth up to <strong>10 points</strong>.</li>
+              <li>Each correct third-place qualifier group is worth <strong>3 points</strong>.</li>
+              <li>Total possible Group Stage score: <strong>144 points</strong>.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <aside class="trends-panel" aria-label="Trends dashboard">
+        <h2>Trends</h2>
+
+        <section class="trend-section">
+          <h3>Most picked winners</h3>
+          <div id="winner-trends"></div>
+        </section>
+
+        <section class="trend-section">
+          <h3>Most picked runner-ups</h3>
+          <div id="runnerup-trends"></div>
+        </section>
+
+        <section class="trend-section">
+          <h3>Tiebreaker goals</h3>
+          <div id="tiebreaker-trends"></div>
+        </section>
+      </aside>
     </div>
-
-    <section id="picks-tab">
-      <div id="picks"></div>
-    </section>
-
-    <section id="leaderboard-tab" class="hidden">
-      <div class="notice">
-        <strong>Leaderboard will be available after all teams have played a game.</strong>
-      </div>
-    </section>
-
-    <section id="rules-tab" class="hidden">
-      <div class="rules">
-        <h2>Scoring rules</h2>
-        <ul>
-          <li>Correct 1st-place team in a group: <strong>4 points</strong></li>
-          <li>Correct 2nd-place team in a group: <strong>3 points</strong></li>
-          <li>Correct 3rd-place team in a group: <strong>2 points</strong></li>
-          <li>Correct 4th-place team in a group: <strong>1 point</strong></li>
-          <li>Each group is worth up to <strong>10 points</strong>.</li>
-          <li>Each correct third-place qualifier group is worth <strong>3 points</strong>.</li>
-          <li>Total possible Group Stage score: <strong>144 points</strong>.</li>
-        </ul>
-      </div>
-    </section>
-  </main>
+  </div>
 
   <script>
     const FLAG_BASE = "https://hatscripts.github.io/circle-flags/flags";
@@ -565,9 +732,8 @@
       `;
     }
 
-    function renderFlagRails() {
-      const left = document.getElementById("flag-track-left");
-      const right = document.getElementById("flag-track-right");
+    function renderFlagMarquee() {
+      const rail = document.getElementById("flag-track-horizontal");
 
       function chip(item) {
         return `
@@ -584,11 +750,7 @@
         `;
       }
 
-      const leftList = [...TEAM_FLAGS, ...TEAM_FLAGS].map(chip).join("");
-      const rightList = [...TEAM_FLAGS].reverse().concat([...TEAM_FLAGS].reverse()).map(chip).join("");
-
-      left.innerHTML = leftList;
-      right.innerHTML = rightList;
+      rail.innerHTML = [...TEAM_FLAGS, ...TEAM_FLAGS, ...TEAM_FLAGS].map(chip).join("");
     }
 
     function renderPicks(data) {
@@ -649,11 +811,111 @@
       });
     }
 
+    function countByGroupPosition(picks, positionIndex) {
+      return GROUPS.map(group => {
+        const counts = new Map();
+
+        picks.forEach(person => {
+          const team = person.groups?.[group]?.[positionIndex];
+          if (!team) return;
+          counts.set(team, (counts.get(team) || 0) + 1);
+        });
+
+        const sorted = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+        const [team, count] = sorted[0] || ["—", 0];
+        const pct = picks.length ? Math.round((count / picks.length) * 100) : 0;
+
+        return { group, team, count, pct };
+      });
+    }
+
+    function renderTrendRows(rootId, rows) {
+      const root = document.getElementById(rootId);
+      if (!root) return;
+
+      root.innerHTML = rows.map(row => `
+        <div class="trend-row">
+          <span class="trend-group">Group ${escapeHtml(row.group)}</span>
+          <span class="trend-team">${teamWithFlag(row.team)}</span>
+          <span class="trend-pct">${row.pct}%</span>
+          <div class="mini-bar">
+            <div class="mini-bar-fill" style="width: ${row.pct}%"></div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderTiebreakerTrends(picks) {
+      const root = document.getElementById("tiebreaker-trends");
+      if (!root) return;
+
+      const values = picks
+        .map(person => Number(person.tiebreakerGoals))
+        .filter(value => Number.isFinite(value));
+
+      if (!values.length) {
+        root.innerHTML = `<p class="meta">No tiebreaker entries yet.</p>`;
+        return;
+      }
+
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      const avg = Math.round(values.reduce((sum, value) => sum + value, 0) / values.length);
+
+      const bins = [
+        { label: "<130", min: -Infinity, max: 129, count: 0 },
+        { label: "130s", min: 130, max: 139, count: 0 },
+        { label: "140s", min: 140, max: 149, count: 0 },
+        { label: "150s", min: 150, max: 159, count: 0 },
+        { label: "160+", min: 160, max: Infinity, count: 0 }
+      ];
+
+      values.forEach(value => {
+        const bin = bins.find(item => value >= item.min && value <= item.max);
+        if (bin) bin.count += 1;
+      });
+
+      const maxCount = Math.max(...bins.map(bin => bin.count), 1);
+
+      root.innerHTML = `
+        <div class="tiebreaker-summary">
+          <div class="stat-box">
+            <span class="stat-label">Avg</span>
+            <span class="stat-value">${avg}</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Low</span>
+            <span class="stat-value">${min}</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">High</span>
+            <span class="stat-value">${max}</span>
+          </div>
+        </div>
+        <div class="histogram">
+          ${bins.map(bin => `
+            <div class="hist-bin" title="${bin.count} pick${bin.count === 1 ? "" : "s"}">
+              <div class="hist-bar" style="height: ${Math.max(4, (bin.count / maxCount) * 62)}px"></div>
+              <span class="hist-label">${escapeHtml(bin.label)}</span>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    function renderTrends(data) {
+      const picks = data.picks || [];
+      renderTrendRows("winner-trends", countByGroupPosition(picks, 0));
+      renderTrendRows("runnerup-trends", countByGroupPosition(picks, 1));
+      renderTiebreakerTrends(picks);
+    }
+
     async function loadData() {
       const response = await fetch(`./picks.json?v=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) throw new Error(`Could not load picks.json: ${response.status}`);
       const data = await response.json();
       renderPicks(data);
+      renderTrends(data);
     }
 
     document.querySelectorAll(".tab").forEach(button => {
@@ -668,7 +930,7 @@
       });
     });
 
-    renderFlagRails();
+    renderFlagMarquee();
 
     loadData().catch(error => {
       const meta = document.getElementById("meta");
