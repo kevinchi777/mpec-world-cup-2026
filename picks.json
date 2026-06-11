@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-11T16:05:01.088613+00:00",
-    "participantCount": 23,
+    "lastUpdated": "2026-06-11T16:48:53.983138+00:00",
+    "participantCount": 24,
     "source": "Generated locally from Excel RawResponses",
     "privacy": "Includes fullName in public picks.json so the Knockout Picks tab can load personalized brackets by full-name lookup.",
     "knockoutLookup": {
@@ -909,6 +909,96 @@
         "F"
       ],
       "tiebreakerGoals": 187
+    },
+    {
+      "fullName": "Kenneth Freedberg",
+      "name": "Kenneth F.",
+      "displayName": "Kenneth F.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Africa",
+          "South Korea",
+          "Czech Republic"
+        ],
+        "B": [
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar",
+          "Switzerland"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Haiti",
+          "Scotland"
+        ],
+        "D": [
+          "United States",
+          "Australia",
+          "Paraguay",
+          "Türkiye"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "New Zealand",
+          "Iran"
+        ],
+        "H": [
+          "Spain",
+          "Cape Verde",
+          "Saudi Arabia",
+          "Uruguay"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Ghana",
+          "Croatia",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "C",
+        "I",
+        "J",
+        "G",
+        "L",
+        "D",
+        "E"
+      ],
+      "tiebreakerGoals": 195
     },
     {
       "fullName": "Kevin Chi",
