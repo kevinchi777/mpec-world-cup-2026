@@ -3,52 +3,186 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MPEC World Cup 2026 Picks</title>
+  <title>MPEC World Cup 2026 Bracket Challenge</title>
   <style>
+    :root {
+      --ink: #101510;
+      --muted: #536057;
+      --line: #d9e1dc;
+      --soft: #f6faf7;
+      --green: #1f7a3a;
+      --green-soft: #edf7ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 32px;
       background: #ffffff;
-      color: #000000;
+      color: var(--ink);
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.4;
+      overflow-x: hidden;
     }
 
     main {
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.95);
     }
 
-    h1 {
-      margin: 0 0 8px;
-      font-size: 28px;
+    .flag-rail {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 54px;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.56;
+    }
+
+    .flag-rail.left {
+      left: 18px;
+    }
+
+    .flag-rail.right {
+      right: 18px;
+    }
+
+    .flag-track {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 11px;
+      animation: scroll-up 88s linear infinite;
+      will-change: transform;
+    }
+
+    .flag-rail.right .flag-track {
+      animation-duration: 98s;
+      animation-delay: -24s;
+    }
+
+    .rail-flag {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: block;
+      filter: saturate(0.95);
+      box-shadow: 0 1px 3px rgba(16, 21, 16, 0.10);
+    }
+
+    .rail-fallback {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 9px;
       font-weight: 700;
     }
 
-    .intro {
-      margin: 0 0 24px;
-      font-size: 15px;
+    @keyframes scroll-up {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-50%);
+      }
+    }
+
+    @media (max-width: 1250px) {
+      .flag-rail {
+        opacity: 0.34;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .flag-rail {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .flag-track {
+        animation: none;
+      }
+    }
+
+    .site-header {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      background: var(--soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .site-header::before {
+      content: "";
+      position: absolute;
+      top: -35%;
+      bottom: -35%;
+      left: 50%;
+      width: 1px;
+      background: rgba(31,122,58,0.20);
+      z-index: 0;
+    }
+
+    .site-header::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 72px;
+      height: 72px;
+      border: 1px solid rgba(31,122,58,0.20);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+      line-height: 1.15;
+      position: relative;
+      z-index: 1;
     }
 
     .meta {
-      margin: 0 0 24px;
+      margin: 0;
       font-size: 13px;
-      color: #333333;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
     }
 
     .tabs {
       display: flex;
       gap: 8px;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #000000;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--line);
     }
 
     .tab {
       appearance: none;
-      border: 1px solid #000000;
+      border: 1px solid var(--line);
       border-bottom: none;
+      border-radius: 8px 8px 0 0;
       background: #ffffff;
-      color: #000000;
+      color: var(--ink);
       padding: 8px 12px;
       cursor: pointer;
       font: inherit;
@@ -56,7 +190,8 @@
     }
 
     .tab.active {
-      background: #000000;
+      background: var(--green);
+      border-color: var(--green);
       color: #ffffff;
     }
 
@@ -65,109 +200,170 @@
     }
 
     .participant {
-      border: 1px solid #000000;
-      margin-bottom: 8px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      margin-bottom: 10px;
       background: #ffffff;
+      overflow: hidden;
     }
-    
+
     .participant summary {
       cursor: pointer;
-      padding: 10px 12px;
+      padding: 12px 14px;
       font-weight: 700;
-      font-size: 15px;
       list-style-position: inside;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
     }
-    
+
     .participant summary:hover {
-      background: #f2f2f2;
+      background: var(--soft);
     }
-    
+
+    .person-meta {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 400;
+    }
+
     .participant-body {
-      border-top: 1px solid #999999;
+      border-top: 1px solid var(--line);
       padding: 12px;
     }
-    
-    .summary-line {
+
+    .card-legend {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       margin: 0 0 10px;
       font-size: 12px;
-      color: #333333;
+      color: var(--muted);
     }
-    
+
     .groups-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
       gap: 8px;
     }
-    
+
     .group-box {
-      border: 1px solid #dddddd;
-      border-radius: 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
       padding: 8px;
       background: #ffffff;
     }
-    
+
     .group-title {
       margin: 0 0 6px;
-      font-weight: 700;
+      color: var(--green);
       font-size: 12px;
-      color: #222222;
+      font-weight: 700;
     }
-    
+
     ol {
       margin: 0;
-      padding-left: 20px;
+      padding-left: 22px;
     }
-    
+
     li {
       margin: 2px 0;
+      padding: 3px 4px;
       font-size: 12px;
       line-height: 1.35;
-      padding: 2px 4px;
     }
+
     li.third-place-pick {
-      border: 1px solid #000000;
+      border: 1px solid var(--green);
       border-radius: 5px;
-      background: #f7f7f7;
-      padding: 4px 6px;
-      margin: 4px 0;
+      background: var(--green-soft);
+      font-weight: 700;
     }
-    .third-place-note {
-      display: block;
-      margin-top: 2px;
+
+    .team-row {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    .team-flag {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      flex: 0 0 auto;
+      vertical-align: -3px;
+    }
+
+    .team-flag-fallback {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 7px;
+      font-weight: 700;
+      flex: 0 0 auto;
+      vertical-align: -3px;
+    }
+
+    .team-name {
+      min-width: 0;
+    }
+
+    .q-badge {
+      display: inline-block;
+      border: 1px solid var(--green);
+      border-radius: 999px;
+      padding: 1px 6px;
+      margin-left: 6px;
       font-size: 10px;
-      color: #555555;
-      font-style: italic;
-      letter-spacing: normal;
-      text-transform: none;
+      font-weight: 700;
+      color: var(--green);
+      background: #ffffff;
+      line-height: 1.2;
+      vertical-align: 1px;
     }
-    
+
+    .card-legend .q-badge {
+      margin-left: 0;
+    }
+
     .third-place {
       margin-top: 10px;
       padding-top: 8px;
-      border-top: 1px solid #dddddd;
+      border-top: 1px solid var(--line);
       font-size: 12px;
-      color: #333333;
+      color: var(--muted);
     }
-    
+
     .third-place span {
       display: inline-block;
-      border: 1px solid #999999;
-      border-radius: 4px;
-      padding: 2px 6px;
-      margin: 2px 3px 2px 0;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px 7px;
+      margin: 4px 3px 0 0;
+      color: var(--ink);
+      background: #ffffff;
       font-weight: 700;
       font-size: 11px;
-      background: #ffffff;
     }
 
     table {
       border-collapse: collapse;
       width: 100%;
       margin-top: 8px;
+      background: #ffffff;
     }
 
     th, td {
-      border: 1px solid #000000;
+      border: 1px solid var(--line);
       padding: 8px;
       text-align: left;
       vertical-align: top;
@@ -175,30 +371,42 @@
     }
 
     th {
-      background: #eeeeee;
+      background: var(--soft);
       font-weight: 700;
     }
 
     .rules {
-      border: 1px solid #000000;
+      border: 1px solid var(--line);
+      border-radius: 10px;
       padding: 16px;
+      background: #ffffff;
+    }
+
+    .rules h2 {
+      margin-top: 0;
     }
 
     .notice {
-      border: 1px solid #000000;
+      border: 1px solid var(--line);
+      border-radius: 10px;
       padding: 12px;
       margin-bottom: 18px;
-      background: #f7f7f7;
-    }
-
-    code {
-      background: #eeeeee;
-      padding: 1px 4px;
+      background: var(--soft);
     }
 
     @media (max-width: 700px) {
       body {
         padding: 18px;
+      }
+
+      .site-header::after {
+        width: 58px;
+        height: 58px;
+      }
+
+      .participant summary {
+        align-items: flex-start;
+        flex-direction: column;
       }
 
       .groups-grid {
@@ -208,8 +416,19 @@
   </style>
 </head>
 <body>
+  <aside class="flag-rail left" aria-hidden="true">
+    <div class="flag-track" id="flag-track-left"></div>
+  </aside>
+
+  <aside class="flag-rail right" aria-hidden="true">
+    <div class="flag-track" id="flag-track-right"></div>
+  </aside>
+
   <main>
-    <h1>MPEC World Cup 2026 Picks</h1>
+    <header class="site-header">
+      <h1>MPEC World Cup 2026 Bracket Challenge</h1>
+      <p id="meta" class="meta">Loading picks...</p>
+    </header>
 
     <div class="tabs" aria-label="Page tabs">
       <button class="tab active" data-tab="picks">All Picks</button>
@@ -218,14 +437,12 @@
     </div>
 
     <section id="picks-tab">
-      <p id="meta" class="meta">Loading picks...</p>
-      <p class="intro">Click a participant’s name to view their picks.</p>
       <div id="picks"></div>
     </section>
 
     <section id="leaderboard-tab" class="hidden">
       <div class="notice">
-        <strong>Leaderboard will be available after all teams have played a game. </strong>
+        <strong>Leaderboard will be available after all teams have played a game.</strong>
       </div>
     </section>
 
@@ -246,8 +463,61 @@
   </main>
 
   <script>
-    const GROUPS = ["A","B","C","D","E","F","G","H","I","J","K","L"];
+    const FLAG_BASE = "https://hatscripts.github.io/circle-flags/flags";
 
+    const TEAM_FLAGS = [
+      { team: "Mexico", code: "mx", fallback: "MX" },
+      { team: "South Africa", code: "za", fallback: "ZA" },
+      { team: "South Korea", code: "kr", fallback: "KR" },
+      { team: "Czech Republic", code: "cz", fallback: "CZ" },
+      { team: "Canada", code: "ca", fallback: "CA" },
+      { team: "Bosnia-Herzegovina", code: "ba", fallback: "BA" },
+      { team: "Qatar", code: "qa", fallback: "QA" },
+      { team: "Switzerland", code: "ch", fallback: "CH" },
+      { team: "Brazil", code: "br", fallback: "BR" },
+      { team: "Morocco", code: "ma", fallback: "MA" },
+      { team: "Haiti", code: "ht", fallback: "HT" },
+      { team: "Scotland", code: "gb-sct", fallback: "SCT" },
+      { team: "United States", code: "us", fallback: "US" },
+      { team: "Paraguay", code: "py", fallback: "PY" },
+      { team: "Australia", code: "au", fallback: "AU" },
+      { team: "Türkiye", code: "tr", fallback: "TR" },
+      { team: "Germany", code: "de", fallback: "DE" },
+      { team: "Curaçao", code: "cw", fallback: "CW" },
+      { team: "Ivory Coast", code: "ci", fallback: "CI" },
+      { team: "Ecuador", code: "ec", fallback: "EC" },
+      { team: "Netherlands", code: "nl", fallback: "NL" },
+      { team: "Japan", code: "jp", fallback: "JP" },
+      { team: "Sweden", code: "se", fallback: "SE" },
+      { team: "Tunisia", code: "tn", fallback: "TN" },
+      { team: "Belgium", code: "be", fallback: "BE" },
+      { team: "Egypt", code: "eg", fallback: "EG" },
+      { team: "Iran", code: "ir", fallback: "IR" },
+      { team: "New Zealand", code: "nz", fallback: "NZ" },
+      { team: "Spain", code: "es", fallback: "ES" },
+      { team: "Cape Verde", code: "cv", fallback: "CV" },
+      { team: "Saudi Arabia", code: "sa", fallback: "SA" },
+      { team: "Uruguay", code: "uy", fallback: "UY" },
+      { team: "France", code: "fr", fallback: "FR" },
+      { team: "Senegal", code: "sn", fallback: "SN" },
+      { team: "Iraq", code: "iq", fallback: "IQ" },
+      { team: "Norway", code: "no", fallback: "NO" },
+      { team: "Argentina", code: "ar", fallback: "AR" },
+      { team: "Algeria", code: "dz", fallback: "DZ" },
+      { team: "Austria", code: "at", fallback: "AT" },
+      { team: "Jordan", code: "jo", fallback: "JO" },
+      { team: "Portugal", code: "pt", fallback: "PT" },
+      { team: "Congo DR", code: "cd", fallback: "CD" },
+      { team: "Uzbekistan", code: "uz", fallback: "UZ" },
+      { team: "Colombia", code: "co", fallback: "CO" },
+      { team: "England", code: "gb-eng", fallback: "ENG" },
+      { team: "Croatia", code: "hr", fallback: "HR" },
+      { team: "Ghana", code: "gh", fallback: "GH" },
+      { team: "Panama", code: "pa", fallback: "PA" }
+    ];
+
+    const TEAM_FLAG_MAP = Object.fromEntries(TEAM_FLAGS.map(item => [item.team, item]));
+    const GROUPS = ["A","B","C","D","E","F","G","H","I","J","K","L"];
 
     function escapeHtml(value) {
       return String(value ?? "")
@@ -258,35 +528,81 @@
         .replaceAll("'", "&#039;");
     }
 
-    function teamWithFlag(team) {
-      return escapeHtml(team);
-    }
-
     function formatDisplayName(fullName) {
-      const parts = String(fullName || "").trim().split(/\s+/);
-    
+      const parts = String(fullName || "").trim().split(/\s+/).filter(Boolean);
+
       if (parts.length === 0) return "";
       if (parts.length === 1) return parts[0];
-    
+
       const firstName = parts[0];
       const lastName = parts[parts.length - 1];
       const lastInitial = lastName.charAt(0).toUpperCase();
-    
+
       return `${firstName} ${lastInitial}.`;
     }
-    
+
+    function flagImgHtml(item, className, fallbackClassName) {
+      if (!item) return "";
+      return `
+        <img
+          class="${className}"
+          src="${FLAG_BASE}/${item.code}.svg"
+          alt="${escapeHtml(item.team)} flag"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+        >
+        <span class="${fallbackClassName}">${escapeHtml(item.fallback)}</span>
+      `;
+    }
+
+    function teamWithFlag(team) {
+      const item = TEAM_FLAG_MAP[team];
+      return `
+        <span class="team-row">
+          ${flagImgHtml(item, "team-flag", "team-flag-fallback")}
+          <span class="team-name">${escapeHtml(team)}</span>
+        </span>
+      `;
+    }
+
+    function renderFlagRails() {
+      const left = document.getElementById("flag-track-left");
+      const right = document.getElementById("flag-track-right");
+
+      function chip(item) {
+        return `
+          <span>
+            <img
+              class="rail-flag"
+              src="${FLAG_BASE}/${item.code}.svg"
+              alt=""
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            >
+            <span class="rail-fallback">${escapeHtml(item.fallback)}</span>
+          </span>
+        `;
+      }
+
+      const leftList = [...TEAM_FLAGS, ...TEAM_FLAGS].map(chip).join("");
+      const rightList = [...TEAM_FLAGS].reverse().concat([...TEAM_FLAGS].reverse()).map(chip).join("");
+
+      left.innerHTML = leftList;
+      right.innerHTML = rightList;
+    }
+
     function renderPicks(data) {
       const meta = document.getElementById("meta");
       const picksRoot = document.getElementById("picks");
       const picks = data.picks || [];
-    
-      meta.textContent = `${picks.length} participant${picks.length === 1 ? "" : "s"} shown. Last updated: ${data.metadata?.lastUpdated || "unknown"}.`;
+
+      meta.textContent = `${picks.length} participant${picks.length === 1 ? "" : "s"} shown · Last updated ${data.metadata?.lastUpdated || "unknown"}`;
       picksRoot.innerHTML = "";
-    
+
       picks.forEach(person => {
         const section = document.createElement("details");
         section.className = "participant";
-    
+
         const groupHtml = GROUPS.map(group => {
           const teams = person.groups?.[group] || [];
           return `
@@ -298,7 +614,7 @@
                   return `
                     <li class="${isThirdPlaceQualifierPick ? "third-place-pick" : ""}">
                       ${teamWithFlag(team)}
-                      ${isThirdPlaceQualifierPick ? `<span class="third-place-note">Third-place qualifier pick</span>` : ""}
+                      ${isThirdPlaceQualifierPick ? `<span class="q-badge">3Q</span>` : ""}
                     </li>
                   `;
                 }).join("")}
@@ -306,15 +622,21 @@
             </div>
           `;
         }).join("");
-    
+
         const thirdPlaceHtml = (person.thirdPlaceGroups || [])
           .map(group => `<span>${escapeHtml(group)}</span>`)
           .join("");
-    
+
         section.innerHTML = `
-          <summary>${escapeHtml(formatDisplayName(person.name))}</summary>
+          <summary>
+            <span class="person-name">${escapeHtml(formatDisplayName(person.name))}</span>
+            <span class="person-meta">Tiebreaker: ${escapeHtml(person.tiebreakerGoals ?? "—")} goals</span>
+          </summary>
           <div class="participant-body">
-            <p class="summary-line">Tiebreaker: ${escapeHtml(person.tiebreakerGoals ?? "—")} total group-stage goals</p>
+            <div class="card-legend">
+              <span class="q-badge">3Q</span>
+              <span>Picked to qualify as a third-place team</span>
+            </div>
             <div class="groups-grid">${groupHtml}</div>
             <div class="third-place">
               <strong>Third-place qualifier groups:</strong>
@@ -322,10 +644,11 @@
             </div>
           </div>
         `;
-    
+
         picksRoot.appendChild(section);
       });
     }
+
     async function loadData() {
       const response = await fetch(`./picks.json?v=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) throw new Error(`Could not load picks.json: ${response.status}`);
@@ -344,6 +667,8 @@
         document.getElementById("rules-tab").classList.toggle("hidden", selected !== "rules");
       });
     });
+
+    renderFlagRails();
 
     loadData().catch(error => {
       const meta = document.getElementById("meta");
