@@ -1,21 +1,109 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-11T15:27:17.403952+00:00",
-    "participantCount": 19,
+    "lastUpdated": "2026-06-11T16:05:01.088613+00:00",
+    "participantCount": 23,
     "source": "Generated locally from Excel RawResponses",
-    "privacy": "Names exported as first name plus last initial. Full names and knockout codes are kept in a private local CSV.",
+    "privacy": "Includes fullName in public picks.json so the Knockout Picks tab can load personalized brackets by full-name lookup.",
     "knockoutLookup": {
       "enabled": true,
-      "hashVersion": "sha256-v1",
-      "hashSalt": "mpec-world-cup-2026-knockout-v1",
-      "hashInput": "hashVersion|NORMALIZED_FULL_NAME|NORMALIZED_KNOCKOUT_CODE|hashSalt"
+      "method": "fullName"
     }
   },
   "picks": [
     {
+      "fullName": "Anne Johnson",
+      "name": "Anne J.",
+      "displayName": "Anne J.",
+      "groups": {
+        "A": [
+          "South Africa",
+          "Mexico",
+          "South Korea",
+          "Czech Republic"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Qatar",
+          "Bosnia-Herzegovina"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Australia",
+          "Türkiye",
+          "United States",
+          "Paraguay"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Curaçao",
+          "Ivory Coast"
+        ],
+        "F": [
+          "Netherlands",
+          "Sweden",
+          "Japan",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Iran",
+          "New Zealand",
+          "Egypt"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ],
+        "I": [
+          "France",
+          "Iraq",
+          "Norway",
+          "Senegal"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "D",
+        "F",
+        "I",
+        "A",
+        "C",
+        "G",
+        "H",
+        "J"
+      ],
+      "tiebreakerGoals": 111
+    },
+    {
+      "fullName": "Anne Neilan",
       "name": "Anne N.",
-      "participantId": "p_66PLW47A",
-      "lookupHash": "ea85fb82d283a9bc56257e87df8aeff31e8c3285af8c9fc2e2a33e83398de647",
+      "displayName": "Anne N.",
       "groups": {
         "A": [
           "South Africa",
@@ -103,9 +191,9 @@
       "tiebreakerGoals": 4
     },
     {
+      "fullName": "Chase Mandell",
       "name": "Chase M.",
-      "participantId": "p_6UYTURL3",
-      "lookupHash": "d9bcc4d131c5bfaf428a007f5af375f73866a28af76f465cb95d37e4ba26692d",
+      "displayName": "Chase M.",
       "groups": {
         "A": [
           "Mexico",
@@ -193,9 +281,9 @@
       "tiebreakerGoals": 224
     },
     {
+      "fullName": "Elif Coskun",
       "name": "Elif C.",
-      "participantId": "p_RPBLMXPH",
-      "lookupHash": "009f2b6399ffb16f6e2acb9f61af19e39ca81f171aeb0c4ad32959f310cdb48e",
+      "displayName": "Elif C.",
       "groups": {
         "A": [
           "Mexico",
@@ -283,9 +371,9 @@
       "tiebreakerGoals": 195
     },
     {
+      "fullName": "Elizabeth Neilan",
       "name": "Elizabeth N.",
-      "participantId": "p_A4SP2JUU",
-      "lookupHash": "3d6194f9c14698864ef94ffcba111129f08301fbc0d3d4afbbe3b168b921f36e",
+      "displayName": "Elizabeth N.",
       "groups": {
         "A": [
           "Mexico",
@@ -373,9 +461,9 @@
       "tiebreakerGoals": 67
     },
     {
+      "fullName": "Ellie Van Blarcom",
       "name": "Ellie B.",
-      "participantId": "p_C6CXSCJL",
-      "lookupHash": "d03370edf09575a3ada05e3ce6feba49381b78127ab9fe0b450fef9260b59e6f",
+      "displayName": "Ellie B.",
       "groups": {
         "A": [
           "Mexico",
@@ -463,9 +551,99 @@
       "tiebreakerGoals": 256
     },
     {
+      "fullName": "Emilia Mannstadt",
+      "name": "Emilia M.",
+      "displayName": "Emilia M.",
+      "groups": {
+        "A": [
+          "South Korea",
+          "Mexico",
+          "South Africa",
+          "Czech Republic"
+        ],
+        "B": [
+          "Canada",
+          "Switzerland",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "United States",
+          "Paraguay",
+          "Türkiye",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Japan",
+          "Netherlands",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Iran",
+          "Egypt",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Uzbekistan",
+          "Congo DR"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "I",
+        "L",
+        "H",
+        "F",
+        "C",
+        "D",
+        "A",
+        "J"
+      ],
+      "tiebreakerGoals": 117
+    },
+    {
+      "fullName": "Emily Hyle",
       "name": "Emily H.",
-      "participantId": "p_Y8BHGATV",
-      "lookupHash": "133337a585b8263f49a16f856008189804491f8e5e3dabb40446a2e5c55e70e2",
+      "displayName": "Emily H.",
       "groups": {
         "A": [
           "Mexico",
@@ -553,9 +731,9 @@
       "tiebreakerGoals": 150
     },
     {
+      "fullName": "Grady Florance",
       "name": "Grady F.",
-      "participantId": "p_W744U8Y3",
-      "lookupHash": "85f81c735cf5b110a85f85d7d04a83175f8e58be5f85c8bbf8e7be2d92db6c2c",
+      "displayName": "Grady F.",
       "groups": {
         "A": [
           "Mexico",
@@ -643,9 +821,9 @@
       "tiebreakerGoals": 216
     },
     {
+      "fullName": "Karen Rowe",
       "name": "Karen R.",
-      "participantId": "p_G2Z6EUDD",
-      "lookupHash": "da772ad3a2e06fffa6ee78b08374af46486dabba18a27e260d6d7293730a9bd8",
+      "displayName": "Karen R.",
       "groups": {
         "A": [
           "South Africa",
@@ -733,9 +911,9 @@
       "tiebreakerGoals": 187
     },
     {
+      "fullName": "Kevin Chi",
       "name": "Kevin C.",
-      "participantId": "p_XU2543YE",
-      "lookupHash": "63b0f750a212521245f779021dbbd94d3060cc4eec2410be4e8502ea30c1e7e0",
+      "displayName": "Kevin C.",
       "groups": {
         "A": [
           "Mexico",
@@ -823,9 +1001,9 @@
       "tiebreakerGoals": 199
     },
     {
+      "fullName": "Kihumuro Raymond",
       "name": "Kihumuro R.",
-      "participantId": "p_V36QMFQ7",
-      "lookupHash": "7642fbcaf3a80298b49eb6b973527d62860566a08c9d08233bdcd285e83198d1",
+      "displayName": "Kihumuro R.",
       "groups": {
         "A": [
           "Mexico",
@@ -913,9 +1091,9 @@
       "tiebreakerGoals": 178
     },
     {
+      "fullName": "Krishna Reddy",
       "name": "Krishna R.",
-      "participantId": "p_PGW5C85C",
-      "lookupHash": "28c521db9b98e6b420bfa7dfe65c08d596eb4a036f69443e706f1bc563afe24b",
+      "displayName": "Krishna R.",
       "groups": {
         "A": [
           "Mexico",
@@ -1003,9 +1181,9 @@
       "tiebreakerGoals": 195
     },
     {
+      "fullName": "Liana Rumberger-Leffel",
       "name": "Liana R.",
-      "participantId": "p_AATBFCMG",
-      "lookupHash": "ef5b6c97c50896c5076434bb3fa6c8ac93c2a4771fdc8ed1aeb760fcec110fb3",
+      "displayName": "Liana R.",
       "groups": {
         "A": [
           "South Korea",
@@ -1093,9 +1271,9 @@
       "tiebreakerGoals": 180
     },
     {
+      "fullName": "Lizzie Qian",
       "name": "Lizzie Q.",
-      "participantId": "p_BXNK2PDP",
-      "lookupHash": "c346d68aaf098068ca678a703b44809812aae0ff2634925e8d415e9b17a9b144",
+      "displayName": "Lizzie Q.",
       "groups": {
         "A": [
           "Mexico",
@@ -1183,9 +1361,9 @@
       "tiebreakerGoals": 152
     },
     {
+      "fullName": "Maddie Humphrey",
       "name": "Maddie H.",
-      "participantId": "p_YNWS4X26",
-      "lookupHash": "58e93ab10b6b6d506936633df3bd2e964f11b5b6f9bf1b74b832a54786b00d74",
+      "displayName": "Maddie H.",
       "groups": {
         "A": [
           "Mexico",
@@ -1273,9 +1451,99 @@
       "tiebreakerGoals": 4
     },
     {
+      "fullName": "Madhava Narasimhadevara",
+      "name": "Madhava N.",
+      "displayName": "Madhava N.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Bosnia-Herzegovina",
+          "Canada",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Paraguay",
+          "United States",
+          "Australia",
+          "Türkiye"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Sweden",
+          "Japan",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "New Zealand",
+          "Iran"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Cape Verde",
+          "Saudi Arabia"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "Ghana",
+          "England",
+          "Croatia",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "C",
+        "E",
+        "G",
+        "I",
+        "K",
+        "J",
+        "F"
+      ],
+      "tiebreakerGoals": 48
+    },
+    {
+      "fullName": "Mario Songane",
       "name": "Mario S.",
-      "participantId": "p_AS9622AP",
-      "lookupHash": "94f86501c67c5eeac2b740e9067b8b9f5f6ee833ea25412f06a840c37ecad918",
+      "displayName": "Mario S.",
       "groups": {
         "A": [
           "South Africa",
@@ -1363,9 +1631,9 @@
       "tiebreakerGoals": 54
     },
     {
+      "fullName": "Mark Siedner",
       "name": "Mark S.",
-      "participantId": "p_Z6ZQ8EC5",
-      "lookupHash": "f4babb82186d9216c6555f8dd0a0c7a3d34568633ad8abd12086b48347350de1",
+      "displayName": "Mark S.",
       "groups": {
         "A": [
           "Mexico",
@@ -1453,9 +1721,99 @@
       "tiebreakerGoals": 226
     },
     {
+      "fullName": "Run Xiang",
+      "name": "Run X.",
+      "displayName": "Run X.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Bosnia-Herzegovina",
+          "Qatar"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "United States",
+          "Türkiye",
+          "Paraguay",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Norway",
+          "Senegal",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Algeria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Congo DR",
+          "Uzbekistan"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "B",
+        "E",
+        "F",
+        "I",
+        "J",
+        "L",
+        "G"
+      ],
+      "tiebreakerGoals": 208
+    },
+    {
+      "fullName": "Shreyas Mosurkal",
       "name": "Shreyas M.",
-      "participantId": "p_CS5YNWVR",
-      "lookupHash": "2e748aa1d2f6aaaaf42f5a6d37c22772d6ea11916dbd89d4c9c67c5d34f2f3d7",
+      "displayName": "Shreyas M.",
       "groups": {
         "A": [
           "Mexico",
@@ -1543,9 +1901,9 @@
       "tiebreakerGoals": 130
     },
     {
+      "fullName": "Suzanne McCluskey",
       "name": "Suzanne M.",
-      "participantId": "p_8GWXPRG2",
-      "lookupHash": "988376f33c3fdd6270fc1b7eb921c348b5f5a05c453bde4b3e5bf5257a22cd9d",
+      "displayName": "Suzanne M.",
       "groups": {
         "A": [
           "Mexico",
@@ -1633,9 +1991,9 @@
       "tiebreakerGoals": 172
     },
     {
+      "fullName": "X. Xu",
       "name": "X. X.",
-      "participantId": "p_TU4VYVZ6",
-      "lookupHash": "9d4dc4c73a50e876eed46492416c9368e7a54bde7cf40cd016b06699f19bbff7",
+      "displayName": "X. X.",
       "groups": {
         "A": [
           "Mexico",
