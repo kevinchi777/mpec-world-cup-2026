@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-11T15:12:25.008262+00:00",
-    "participantCount": 18,
+    "lastUpdated": "2026-06-11T15:27:17.403952+00:00",
+    "participantCount": 19,
     "source": "Generated locally from Excel RawResponses",
     "privacy": "Names exported as first name plus last initial. Full names and knockout codes are kept in a private local CSV.",
     "knockoutLookup": {
@@ -12,6 +12,96 @@
     }
   },
   "picks": [
+    {
+      "name": "Anne N.",
+      "participantId": "p_66PLW47A",
+      "lookupHash": "ea85fb82d283a9bc56257e87df8aeff31e8c3285af8c9fc2e2a33e83398de647",
+      "groups": {
+        "A": [
+          "South Africa",
+          "South Korea",
+          "Mexico",
+          "Czech Republic"
+        ],
+        "B": [
+          "Qatar",
+          "Canada",
+          "Switzerland",
+          "Bosnia-Herzegovina"
+        ],
+        "C": [
+          "Brazil",
+          "Haiti",
+          "Scotland",
+          "Morocco"
+        ],
+        "D": [
+          "Paraguay",
+          "United States",
+          "Türkiye",
+          "Australia"
+        ],
+        "E": [
+          "Germany",
+          "Ecuador",
+          "Ivory Coast",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Sweden",
+          "Japan",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Iran",
+          "New Zealand",
+          "Egypt"
+        ],
+        "H": [
+          "Uruguay",
+          "Spain",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "Senegal",
+          "France",
+          "Iraq",
+          "Norway"
+        ],
+        "J": [
+          "Argentina",
+          "Austria",
+          "Jordan",
+          "Algeria"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Uzbekistan",
+          "Congo DR"
+        ],
+        "L": [
+          "England",
+          "Panama",
+          "Ghana",
+          "Croatia"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "B",
+        "L",
+        "J",
+        "H",
+        "E",
+        "C",
+        "I",
+        "G"
+      ],
+      "tiebreakerGoals": 4
+    },
     {
       "name": "Chase M.",
       "participantId": "p_6UYTURL3",
