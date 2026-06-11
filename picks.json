@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-11T16:58:07.249181+00:00",
-    "participantCount": 25,
+    "lastUpdated": "2026-06-11T17:13:27.438618+00:00",
+    "participantCount": 27,
     "source": "Generated locally from Excel RawResponses",
     "privacy": "Includes fullName in public picks.json so the Knockout Picks tab can load personalized brackets by full-name lookup.",
     "knockoutLookup": {
@@ -279,6 +279,96 @@
         "L"
       ],
       "tiebreakerGoals": 224
+    },
+    {
+      "fullName": "Connie Dai",
+      "name": "Connie D.",
+      "displayName": "Connie D.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Korea",
+          "Czech Republic",
+          "South Africa"
+        ],
+        "B": [
+          "Switzerland",
+          "Canada",
+          "Qatar",
+          "Bosnia-Herzegovina"
+        ],
+        "C": [
+          "Brazil",
+          "Morocco",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "United States",
+          "Türkiye",
+          "Australia",
+          "Paraguay"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Netherlands",
+          "Japan",
+          "Sweden",
+          "Tunisia"
+        ],
+        "G": [
+          "Belgium",
+          "Egypt",
+          "Iran",
+          "New Zealand"
+        ],
+        "H": [
+          "Spain",
+          "Uruguay",
+          "Saudi Arabia",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Senegal",
+          "Norway",
+          "Iraq"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Austria",
+          "Jordan"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Uzbekistan",
+          "Congo DR"
+        ],
+        "L": [
+          "England",
+          "Croatia",
+          "Ghana",
+          "Panama"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "G",
+        "H",
+        "I",
+        "J"
+      ],
+      "tiebreakerGoals": 370
     },
     {
       "fullName": "Elif Coskun",
@@ -1809,6 +1899,96 @@
         "E"
       ],
       "tiebreakerGoals": 226
+    },
+    {
+      "fullName": "Melissa Comenduley",
+      "name": "Melissa C.",
+      "displayName": "Melissa C.",
+      "groups": {
+        "A": [
+          "Mexico",
+          "South Africa",
+          "Czech Republic",
+          "South Korea"
+        ],
+        "B": [
+          "Qatar",
+          "Bosnia-Herzegovina",
+          "Switzerland",
+          "Canada"
+        ],
+        "C": [
+          "Morocco",
+          "Brazil",
+          "Scotland",
+          "Haiti"
+        ],
+        "D": [
+          "Türkiye",
+          "Paraguay",
+          "Australia",
+          "United States"
+        ],
+        "E": [
+          "Germany",
+          "Ivory Coast",
+          "Ecuador",
+          "Curaçao"
+        ],
+        "F": [
+          "Tunisia",
+          "Japan",
+          "Netherlands",
+          "Sweden"
+        ],
+        "G": [
+          "Egypt",
+          "Belgium",
+          "New Zealand",
+          "Iran"
+        ],
+        "H": [
+          "Spain",
+          "Saudi Arabia",
+          "Uruguay",
+          "Cape Verde"
+        ],
+        "I": [
+          "France",
+          "Iraq",
+          "Senegal",
+          "Norway"
+        ],
+        "J": [
+          "Argentina",
+          "Algeria",
+          "Jordan",
+          "Austria"
+        ],
+        "K": [
+          "Portugal",
+          "Colombia",
+          "Uzbekistan",
+          "Congo DR"
+        ],
+        "L": [
+          "England",
+          "Ghana",
+          "Panama",
+          "Croatia"
+        ]
+      },
+      "thirdPlaceGroups": [
+        "A",
+        "C",
+        "D",
+        "F",
+        "I",
+        "L",
+        "K",
+        "J"
+      ],
+      "tiebreakerGoals": 97
     },
     {
       "fullName": "Run Xiang",
