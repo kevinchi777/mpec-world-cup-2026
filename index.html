@@ -484,6 +484,101 @@
       white-space: nowrap;
     }
 
+
+    .leaderboard-panel {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      background: #ffffff;
+    }
+
+    .leaderboard-panel h2 {
+      margin: 0 0 6px;
+      font-size: 20px;
+    }
+
+    .leaderboard-subtitle {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .leaderboard-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .leaderboard-stat {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 10px;
+      background: var(--soft);
+    }
+
+    .leaderboard-stat-label {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .leaderboard-stat-value {
+      display: block;
+      margin-top: 2px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .leaderboard-table-wrap {
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+
+    .leaderboard-table {
+      min-width: 760px;
+    }
+
+    .leaderboard-table th:nth-child(1),
+    .leaderboard-table td:nth-child(1),
+    .leaderboard-table th:nth-child(3),
+    .leaderboard-table td:nth-child(3),
+    .leaderboard-table th:nth-child(4),
+    .leaderboard-table td:nth-child(4),
+    .leaderboard-table th:nth-child(5),
+    .leaderboard-table td:nth-child(5),
+    .leaderboard-table th:nth-child(6),
+    .leaderboard-table td:nth-child(6) {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 24px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--soft);
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .leader-name {
+      font-weight: 700;
+    }
+
+    .score-total {
+      font-weight: 700;
+      color: var(--green);
+    }
+
     table {
       border-collapse: collapse;
       width: 100%;
@@ -587,9 +682,7 @@
         </section>
 
         <section id="leaderboard-tab" class="hidden">
-          <div class="notice">
-            <strong>Leaderboard will be available after all teams have played a game.</strong>
-          </div>
+          <div id="leaderboard"></div>
         </section>
 
         <section id="rules-tab" class="hidden">
@@ -708,6 +801,11 @@
       return `${firstName} ${lastInitial}.`;
     }
 
+    function participantDisplayName(person) {
+      return person.displayName || formatDisplayName(person.name || person.fullName || "");
+    }
+
+
     function flagImgHtml(item, className, fallbackClassName) {
       if (!item) return "";
       return `
@@ -791,7 +889,7 @@
 
         section.innerHTML = `
           <summary>
-            <span class="person-name">${escapeHtml(formatDisplayName(person.name))}</span>
+            <span class="person-name">${escapeHtml(participantDisplayName(person))}</span>
             <span class="person-meta">Tiebreaker: ${escapeHtml(person.tiebreakerGoals ?? "—")} goals</span>
           </summary>
           <div class="participant-body">
@@ -910,12 +1008,119 @@
       renderTiebreakerTrends(picks);
     }
 
+
+    function renderLeaderboardWaiting() {
+      const root = document.getElementById("leaderboard");
+      if (!root) return;
+
+      root.innerHTML = `
+        <div class="leaderboard-panel">
+          <h2>Leaderboard</h2>
+          <p class="leaderboard-subtitle">
+            The leaderboard will appear here after <code>leaderboard.json</code> is generated from the Excel workbook and pushed to GitHub.
+          </p>
+          <div class="notice">
+            <strong>No leaderboard.json found yet.</strong>
+            <div style="margin-top: 6px;">
+              Enter match scores in the workbook, save it, then run <code>update_leaderboard_and_push_to_github.bat</code>.
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderExcelLeaderboard(data) {
+      const root = document.getElementById("leaderboard");
+      if (!root) return;
+
+      const rows = data?.leaderboard || [];
+      if (!rows.length) {
+        renderLeaderboardWaiting();
+        return;
+      }
+
+      const meta = data.metadata || {};
+      const leader = rows[0];
+
+      root.innerHTML = `
+        <div class="leaderboard-panel">
+          <h2>Leaderboard</h2>
+          <p class="leaderboard-subtitle">
+            Exported from the Excel workbook. Last updated ${escapeHtml(meta.lastUpdated || "unknown")}.
+          </p>
+
+          <div class="leaderboard-summary">
+            <div class="leaderboard-stat">
+              <span class="leaderboard-stat-label">Leader</span>
+              <span class="leaderboard-stat-value">${escapeHtml(leader.displayName || formatDisplayName(leader.fullName))}</span>
+            </div>
+            <div class="leaderboard-stat">
+              <span class="leaderboard-stat-label">Scorable groups</span>
+              <span class="leaderboard-stat-value">${(meta.scorableGroups || []).length}/12</span>
+            </div>
+            <div class="leaderboard-stat">
+              <span class="leaderboard-stat-label">Matches played</span>
+              <span class="leaderboard-stat-value">${meta.playedMatches ?? "—"}/${meta.totalMatches ?? "—"}</span>
+            </div>
+            <div class="leaderboard-stat">
+              <span class="leaderboard-stat-label">Goals so far</span>
+              <span class="leaderboard-stat-value">${meta.goalsSoFar ?? "—"}</span>
+            </div>
+          </div>
+
+          <div class="leaderboard-table-wrap">
+            <table class="leaderboard-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Participant</th>
+                  <th>Total</th>
+                  <th>Group standing</th>
+                  <th>3rd-place</th>
+                  <th>Tiebreaker</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rows.map(row => `
+                  <tr>
+                    <td><span class="rank-badge">${escapeHtml(row.rank)}</span></td>
+                    <td><div class="leader-name">${escapeHtml(row.displayName || formatDisplayName(row.fullName))}</div></td>
+                    <td class="score-total">${escapeHtml(row.totalPts)}</td>
+                    <td>${escapeHtml(row.groupStandingPts)}</td>
+                    <td>${escapeHtml(row.thirdPlacePts)}</td>
+                    <td>${escapeHtml(row.tiebreakerGoals ?? "—")}</td>
+                  </tr>
+                `).join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    }
+
+    async function loadLeaderboardData() {
+      try {
+        const response = await fetch(`./leaderboard.json?v=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) {
+          renderLeaderboardWaiting();
+          return;
+        }
+
+        const data = await response.json();
+        renderExcelLeaderboard(data);
+      } catch (error) {
+        console.info("No leaderboard.json found yet.", error);
+        renderLeaderboardWaiting();
+      }
+    }
+
     async function loadData() {
       const response = await fetch(`./picks.json?v=${Date.now()}`, { cache: "no-store" });
       if (!response.ok) throw new Error(`Could not load picks.json: ${response.status}`);
       const data = await response.json();
       renderPicks(data);
       renderTrends(data);
+      loadLeaderboardData();
     }
 
     document.querySelectorAll(".tab").forEach(button => {
