@@ -1,0 +1,339 @@
+{
+  "metadata": {
+    "lastUpdated": "2026-06-15T20:14:47.934531+00:00",
+    "source": "Generated locally from Excel Leaderboard sheet",
+    "sourceWorkbook": "C:\\Users\\kevin\\OneDrive - Mass General Brigham\\world_cup_2026_group_stage_challenge_MPEC_vCurrent.xlsx",
+    "leaderboardRows": 29,
+    "scorableGroups": [
+      "A",
+      "D",
+      "E"
+    ],
+    "thirdPlaceScoringActive": false,
+    "playedMatches": 13,
+    "totalMatches": 72,
+    "goalsSoFar": 38,
+    "actualGroupStageGoals": null
+  },
+  "leaderboard": [
+    {
+      "rank": 1,
+      "fullName": "Suzanne McCluskey",
+      "displayName": "Suzanne M.",
+      "totalPts": 28,
+      "groupStandingPts": 28,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 172,
+      "sourceRawRow": 14
+    },
+    {
+      "rank": 2,
+      "fullName": "Connie Dai",
+      "displayName": "Connie D.",
+      "totalPts": 27,
+      "groupStandingPts": 27,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 370,
+      "sourceRawRow": 32
+    },
+    {
+      "rank": 3,
+      "fullName": "Ellie Van Blarcom",
+      "displayName": "Ellie B.",
+      "totalPts": 27,
+      "groupStandingPts": 27,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 256,
+      "sourceRawRow": 22
+    },
+    {
+      "rank": 4,
+      "fullName": "Kihumuro Raymond",
+      "displayName": "Kihumuro R.",
+      "totalPts": 23,
+      "groupStandingPts": 23,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 178,
+      "sourceRawRow": 15
+    },
+    {
+      "rank": 5,
+      "fullName": "Kenneth Freedberg",
+      "displayName": "Kenneth F.",
+      "totalPts": 22,
+      "groupStandingPts": 22,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 195,
+      "sourceRawRow": 29
+    },
+    {
+      "rank": 6,
+      "fullName": "Run Xiang",
+      "displayName": "Run X.",
+      "totalPts": 21,
+      "groupStandingPts": 21,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 208,
+      "sourceRawRow": 27
+    },
+    {
+      "rank": 7,
+      "fullName": "Chase Mandell",
+      "displayName": "Chase M.",
+      "totalPts": 21,
+      "groupStandingPts": 21,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 224,
+      "sourceRawRow": 21
+    },
+    {
+      "rank": 8,
+      "fullName": "Elizabeth Neilan",
+      "displayName": "Elizabeth N.",
+      "totalPts": 21,
+      "groupStandingPts": 21,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 67,
+      "sourceRawRow": 13
+    },
+    {
+      "rank": 9,
+      "fullName": "Lizzie Qian",
+      "displayName": "Lizzie Q.",
+      "totalPts": 19,
+      "groupStandingPts": 19,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 152,
+      "sourceRawRow": 8
+    },
+    {
+      "rank": 10,
+      "fullName": "Elif Coskun",
+      "displayName": "Elif C.",
+      "totalPts": 19,
+      "groupStandingPts": 19,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 195,
+      "sourceRawRow": 6
+    },
+    {
+      "rank": 11,
+      "fullName": "Krishna Reddy",
+      "displayName": "Krishna R.",
+      "totalPts": 18,
+      "groupStandingPts": 18,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 195,
+      "sourceRawRow": 19
+    },
+    {
+      "rank": 12,
+      "fullName": "Shreyas Mosurkal",
+      "displayName": "Shreyas M.",
+      "totalPts": 18,
+      "groupStandingPts": 18,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 130,
+      "sourceRawRow": 10
+    },
+    {
+      "rank": 13,
+      "fullName": "Melissa Comenduley",
+      "displayName": "Melissa C.",
+      "totalPts": 17,
+      "groupStandingPts": 17,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 97,
+      "sourceRawRow": 31
+    },
+    {
+      "rank": 14,
+      "fullName": "Zoë Elizée",
+      "displayName": "Zoë E.",
+      "totalPts": 17,
+      "groupStandingPts": 17,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 192,
+      "sourceRawRow": 30
+    },
+    {
+      "rank": 15,
+      "fullName": "Madhava Narasimhadevara",
+      "displayName": "Madhava N.",
+      "totalPts": 17,
+      "groupStandingPts": 17,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 48,
+      "sourceRawRow": 26
+    },
+    {
+      "rank": 16,
+      "fullName": "Liana Rumberger-Leffel",
+      "displayName": "Liana R.",
+      "totalPts": 16,
+      "groupStandingPts": 16,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 180,
+      "sourceRawRow": 17
+    },
+    {
+      "rank": 17,
+      "fullName": "X. Xu",
+      "displayName": "X. X.",
+      "totalPts": 16,
+      "groupStandingPts": 16,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 188,
+      "sourceRawRow": 12
+    },
+    {
+      "rank": 18,
+      "fullName": "Maddie Humphrey",
+      "displayName": "Maddie H.",
+      "totalPts": 16,
+      "groupStandingPts": 16,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 4,
+      "sourceRawRow": 9
+    },
+    {
+      "rank": 19,
+      "fullName": "Nora Brower",
+      "displayName": "Nora B.",
+      "totalPts": 14,
+      "groupStandingPts": 14,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 185,
+      "sourceRawRow": 34
+    },
+    {
+      "rank": 20,
+      "fullName": "Emily Hyle",
+      "displayName": "Emily H.",
+      "totalPts": 14,
+      "groupStandingPts": 14,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 150,
+      "sourceRawRow": 23
+    },
+    {
+      "rank": 21,
+      "fullName": "Grady Florance",
+      "displayName": "Grady F.",
+      "totalPts": 14,
+      "groupStandingPts": 14,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 216,
+      "sourceRawRow": 18
+    },
+    {
+      "rank": 22,
+      "fullName": "Emilia Mannstadt",
+      "displayName": "Emilia M.",
+      "totalPts": 13,
+      "groupStandingPts": 13,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 117,
+      "sourceRawRow": 25
+    },
+    {
+      "rank": 23,
+      "fullName": "Mario Songane",
+      "displayName": "Mario S.",
+      "totalPts": 13,
+      "groupStandingPts": 13,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 54,
+      "sourceRawRow": 11
+    },
+    {
+      "rank": 24,
+      "fullName": "Kevin Chi",
+      "displayName": "Kevin C.",
+      "totalPts": 13,
+      "groupStandingPts": 13,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 199,
+      "sourceRawRow": 7
+    },
+    {
+      "rank": 25,
+      "fullName": "Lisa Bebell",
+      "displayName": "Lisa B.",
+      "totalPts": 11,
+      "groupStandingPts": 11,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 77,
+      "sourceRawRow": 33
+    },
+    {
+      "rank": 26,
+      "fullName": "Anne Neilan",
+      "displayName": "Anne N.",
+      "totalPts": 11,
+      "groupStandingPts": 11,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 4,
+      "sourceRawRow": 24
+    },
+    {
+      "rank": 27,
+      "fullName": "Mark Siedner",
+      "displayName": "Mark S.",
+      "totalPts": 8,
+      "groupStandingPts": 8,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 226,
+      "sourceRawRow": 5
+    },
+    {
+      "rank": 28,
+      "fullName": "Anne Johnson",
+      "displayName": "Anne J.",
+      "totalPts": 7,
+      "groupStandingPts": 7,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 111,
+      "sourceRawRow": 28
+    },
+    {
+      "rank": 29,
+      "fullName": "Karen Rowe",
+      "displayName": "Karen R.",
+      "totalPts": 6,
+      "groupStandingPts": 6,
+      "thirdPlacePts": 0,
+      "thirdPlaceStatus": "Valid",
+      "tiebreakerGoals": 187,
+      "sourceRawRow": 20
+    }
+  ]
+}
