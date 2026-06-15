@@ -856,7 +856,7 @@
       const picksRoot = document.getElementById("picks");
       const picks = data.picks || [];
 
-      meta.textContent = `${picks.length} participant${picks.length === 1 ? "" : "s"} shown · Last updated ${data.metadata?.lastUpdated || "unknown"}`;
+      meta.textContent = `${picks.length} participant${picks.length === 1 ? "" : "s"}`;
       picksRoot.innerHTML = "";
 
       picks.forEach(person => {
