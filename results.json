@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-17T18:04:20.510477+00:00",
+    "lastUpdated": "2026-06-18T16:39:38.742626+00:00",
     "source": "Generated locally from Excel LiveStandings, LiveThirdPlace, and MatchResults sheets",
     "sourceWorkbook": "C:\\Users\\kevin\\OneDrive - Mass General Brigham\\world_cup_2026_group_stage_challenge_MPEC_vCurrent.xlsx",
     "completedGroups": [
@@ -9,13 +9,12 @@
       "E",
       "I",
       "J",
-      "K",
       "L"
     ],
     "thirdPlaceScoringActive": true,
     "playedMatches": 24,
     "totalMatches": 72,
-    "goalsSoFar": 71,
+    "goalsSoFar": 75,
     "actualGroupStageGoals": null
   },
   "groupStandings": {
@@ -54,20 +53,16 @@
       "Jordan",
       "Algeria"
     ],
-    "K": [
-      "Colombia",
-      "Portugal",
-      "Congo DR",
-      "Uzbekistan"
-    ],
+    "K": [],
     "L": [
-      "Ghana",
       "England",
-      "Croatia",
-      "Panama"
+      "Ghana",
+      "Panama",
+      "Croatia"
     ]
   },
   "thirdPlaceGroups": [
+    "A",
     "G",
     "H"
   ]
