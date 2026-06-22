@@ -1,21 +1,25 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-19T18:49:42.925470+00:00",
+    "lastUpdated": "2026-06-22T17:37:26.633461+00:00",
     "source": "Generated locally from Excel LiveStandings, LiveThirdPlace, and MatchResults sheets",
     "sourceWorkbook": "C:\\Users\\kevin\\OneDrive - Mass General Brigham\\world_cup_2026_group_stage_challenge_MPEC_vCurrent.xlsx",
     "completedGroups": [
       "A",
       "B",
+      "C",
       "D",
       "E",
+      "F",
+      "G",
+      "H",
       "I",
       "J",
       "L"
     ],
     "thirdPlaceScoringActive": true,
-    "playedMatches": 28,
+    "playedMatches": 40,
     "totalMatches": 72,
-    "goalsSoFar": 89,
+    "goalsSoFar": 121,
     "actualGroupStageGoals": null
   },
   "groupStandings": {
@@ -31,12 +35,17 @@
       "Bosnia-Herzegovina",
       "Qatar"
     ],
-    "C": [],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Scotland",
+      "Haiti"
+    ],
     "D": [
       "United States",
       "Australia",
-      "Türkiye",
-      "Paraguay"
+      "Paraguay",
+      "Türkiye"
     ],
     "E": [
       "Germany",
@@ -44,9 +53,24 @@
       "Ecuador",
       "Curaçao"
     ],
-    "F": [],
-    "G": [],
-    "H": [],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Sweden",
+      "Tunisia"
+    ],
+    "G": [
+      "Egypt",
+      "Iran",
+      "Belgium",
+      "New Zealand"
+    ],
+    "H": [
+      "Spain",
+      "Uruguay",
+      "Cape Verde",
+      "Saudi Arabia"
+    ],
     "I": [
       "Norway",
       "France",
@@ -69,8 +93,12 @@
   },
   "thirdPlaceGroups": [
     "A",
-    "B",
+    "C",
+    "D",
+    "E",
+    "F",
     "G",
-    "H"
+    "H",
+    "K"
   ]
 }
