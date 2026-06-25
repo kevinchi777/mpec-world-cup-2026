@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "lastUpdated": "2026-06-24T15:36:30.096907+00:00",
+    "lastUpdated": "2026-06-25T16:24:27.286314+00:00",
     "source": "Generated locally from Excel LiveStandings, LiveThirdPlace, and MatchResults sheets",
     "sourceWorkbook": "C:\\Users\\kevin\\OneDrive - Mass General Brigham\\world_cup_2026_group_stage_challenge_MPEC_vCurrent.xlsx",
     "completedGroups": [
@@ -18,21 +18,21 @@
       "L"
     ],
     "thirdPlaceScoringActive": true,
-    "playedMatches": 48,
+    "playedMatches": 54,
     "totalMatches": 72,
-    "goalsSoFar": 141,
+    "goalsSoFar": 161,
     "actualGroupStageGoals": null
   },
   "groupStandings": {
     "A": [
       "Mexico",
+      "South Africa",
       "South Korea",
-      "Czech Republic",
-      "South Africa"
+      "Czech Republic"
     ],
     "B": [
-      "Canada",
       "Switzerland",
+      "Canada",
       "Bosnia-Herzegovina",
       "Qatar"
     ],
@@ -99,9 +99,9 @@
   },
   "thirdPlaceGroups": [
     "A",
+    "B",
     "C",
     "F",
-    "G",
     "H",
     "L"
   ]
